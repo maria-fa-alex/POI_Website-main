@@ -12,21 +12,24 @@
   <meta property="og:title" content="Free Debate Sessions &amp; Workshops | POI UK" />
   <meta property="og:description" content="Join free online debate workshops and weekly in-person British Parliamentary sessions in Oxford. Open to all secondary school students – no experience needed." />
   <meta property="og:url" content="https://poi.org.uk/sessions.html" />
-  <meta property="og:image" content="https://poi.org.uk/logo.jpg" />
+  <meta property="og:image" content="https://poi.org.uk/assets/images/share-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="POI – Power of Interest: Your Words. Your Way. Free debate workshops for students." />
   <meta property="og:locale" content="en_GB" />
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Free Debate Sessions &amp; Workshops | POI UK" />
   <meta name="twitter:description" content="Free online debate workshops and weekly in-person BP sessions in Oxford. No experience required." />
-  <meta name="twitter:image" content="https://poi.org.uk/logo.jpg" />
+  <meta name="twitter:image" content="https://poi.org.uk/assets/images/share-card.jpg" />
   <!-- Geo-targeting -->
   <meta name="geo.region" content="GB-OXF" />
   <meta name="geo.placename" content="Oxford" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2.3" />
-  <link rel="icon" href="logo.jpg" type="image/jpeg" />
+  <meta name="theme-color" content="#0A0F2E" />
+  <script>document.documentElement.classList.add('js');(function(){try{var t=localStorage.getItem('poi-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+  <link rel="stylesheet" href="assets/css/styles.css?v=3.1" />
+  <link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
   <link rel="canonical" href="https://poi.org.uk/sessions.html" />
   <!-- Structured Data: BreadcrumbList -->
   <script type="application/ld+json">
@@ -46,9 +49,17 @@
       "@context": "https://schema.org",
       "@type": "Event",
       "name": "POI Online Debate Skills Workshop",
-      "description": "Free 30-minute online debate skills webinar for secondary school students. Perfect for beginners learning British Parliamentary debate.",
-      "startDate": "2026-09-20T09:00:00+01:00",
-      "endDate": "2026-09-20T09:30:00+01:00",
+      "description": "Free 30-minute online debate skills webinar for secondary school students, held every Sunday at 9:00 AM UK time on Google Meet. Perfect for beginners learning British Parliamentary debate.",
+      "startDate": "2026-11-22T09:00:00+00:00",
+      "endDate": "2026-11-22T09:30:00+00:00",
+      "eventSchedule": {
+        "@type": "Schedule",
+        "repeatFrequency": "P1W",
+        "byDay": "https://schema.org/Sunday",
+        "startTime": "09:00:00",
+        "endTime": "09:30:00",
+        "scheduleTimezone": "Europe/London"
+      },
       "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
       "eventStatus": "https://schema.org/EventScheduled",
       "location": {
@@ -74,7 +85,7 @@
       "startDate": "2026-10-01T16:30:00+01:00",
       "endDate": "2026-10-01T18:00:00+01:00",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "eventStatus": "https://schema.org/EventScheduled",
+      "eventStatus": "https://schema.org/EventPostponed",
       "location": {
         "@type": "Place",
         "name": "Summertown, Oxford",
@@ -100,69 +111,67 @@
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
-  <header class="site-header">
-<div class="header-inner">
-      <a href="index.html" class="header-brand">
-        <img src="logo.jpg" alt="POI Logo" class="header-logo" />
-        <div class="header-brand-text">
-          <span class="brand-title">POI</span>
-          <span class="brand-sub">Power of Interest</span>
-        </div>
-      </a>
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-
-        <div class="nav-actions">
-          <a href="https://www.zeffy.com/en-GB/donation-form/your-words-your-way" target="_blank" rel="noopener noreferrer" class="nav-btn-donate">Support Us</a>
-          <a href="sessions.html" class="nav-cta">Sign Up</a>
-        </div>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">Our Story</a>
-      <a href="sessions.html" class="active">Sessions</a>
-      <a href="resources.html">Resources</a>
-      <a href="volunteering.html">Volunteer</a>
-      <a href="faq.html">FAQ</a>
-      <a href="policies.html">Policies</a>
-      <a href="contact.html">Contact</a>
-      <div class="mobile-nav-actions">
-        <a href="https://www.zeffy.com/en-GB/donation-form/your-words-your-way" target="_blank" rel="noopener noreferrer" class="btn btn-outline-yellow">Support Us &rarr;</a>
-        <a href="sessions.html" class="btn btn-primary">Sign Up &rarr;</a>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="header-brand" aria-label="POI – Power of Interest, home">
+      <img src="assets/images/logo_no_words.jpg" alt="" class="header-logo" width="44" height="44" />
+      <div class="header-brand-text">
+        <span class="brand-title">POI</span>
+        <span class="brand-sub">Power of Interest</span>
+      </div>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-links">
+        <a href="about.html">Our Story</a>
+        <a href="sessions.html" class="active" aria-current="page">Sessions</a>
+        <a href="resources.html">Resources</a>
+        <a href="motions.html">Motions</a>
+        <a href="volunteering.html">Volunteer</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle colour theme"></button>
+        <a href="support.html" class="btn btn-outline-yellow">Support Us</a>
+        <a href="sessions.html#sign-up" class="btn btn-primary">Sign Up</a>
       </div>
     </nav>
-  </header>
-
-  <!-- ===== PAGE HEADER ===== -->
-  <section class="page-header">
-    <div class="container reveal">
-      <span class="hero-tag">Workshops &amp; Events</span>
-      <h1>Our Sessions</h1>
-      <p>Three ways to learn, practice, and compete &mdash; a clear pathway for every level of experience.</p>
-      <!-- ===== ANNOUNCEMENT CALLOUT ===== -->
-      <div class="hero-announcement">
-        <span class="announcement-dot"></span>
-        <span>Back on <strong>Sunday 8 November at 9:00 AM</strong> &mdash; see you then!</span>
-      </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="sessions.html" class="active" aria-current="page">Sessions</a>
+        <a href="resources.html">Resources</a>
+        <a href="motions.html">Motions</a>
+        <a href="volunteering.html">Volunteer</a>
+        <a href="faq.html">FAQ</a>
+        <a href="policies.html">Policies</a>
+        <a href="contact.html">Contact</a>
+    <div class="mobile-nav-actions">
+      <a href="support.html" class="btn btn-outline-yellow">Support Us</a>
+      <a href="sessions.html#sign-up" class="btn btn-primary">Sign Up &rarr;</a>
     </div>
-  </section>
+  </nav>
+</header>
 
-  <!-- ===== SCHEDULE UPDATE BANNER ===== -->
-  <section class="section" style="padding-bottom: 0; padding-top: 2rem;">
-    <div class="container">
-      <div class="reveal" style="background: var(--launch-banner-bg); border: 1.5px solid var(--yellow); border-radius: 22px; padding: 3rem 2rem; text-align: center; box-shadow: 0 16px 40px rgba(242, 197, 15, 0.12), var(--card-shadow);">
-        <span style="display: inline-block; background: var(--yellow); border: 1px solid var(--yellow); color: #060818; padding: 0.4rem 1.25rem; border-radius: 50px; font-weight: 800; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 1.1rem; box-shadow: 0 2px 10px rgba(242, 197, 15, 0.35);">Schedule Update</span>
-        <h2 style="margin-bottom: 0.75rem; font-size: clamp(1.8rem, 4vw, 2.8rem); color: var(--heading-color); font-weight: 900; text-transform: uppercase;">Back on 8 November!</h2>
-        <p style="color: var(--text-slate); max-width: 680px; margin: 0 auto; font-size: 1.05rem; line-height: 1.7;">
-          Our online debate workshops are <strong>back on Sunday 8 November at 9:00 AM</strong> &mdash; see you then!
-        </p>
-        <p style="color: var(--text-slate); max-width: 680px; margin: 1rem auto 0; font-size: 1.05rem; line-height: 1.7;">
-          <strong>In-person sessions in Oxford are coming soon</strong> &mdash; stay tuned! Registrations are open, so sign up below.
-        </p>
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div class="reveal">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Sessions</span></nav>
+        <span class="eyebrow">Workshops &amp; Events</span>
+        <h1>Our <span class="mark">Sessions</span></h1>
+        <p class="lede">Three ways to learn, practise, and compete &mdash; a clear pathway for every level of experience.</p>
+      </div>
+      <div class="page-hero-visual reveal reveal-delay-2">
+        <div class="illus illus--tilt">
+          <img fetchpriority="high" src="assets/images/background_room.jpg" alt="Watercolour illustration of a gavel in front of rows of debate benches" width="1024" height="559" />
+        </div>
       </div>
     </div>
   </section>
@@ -170,164 +179,310 @@
   <!-- ===== THREE LEVELS ===== -->
   <section class="section">
     <div class="container">
-      <div class="section-header-split reveal">
-        <h2>Three Levels of Learning</h2>
-        <div class="section-header-desc">
-          <span class="arrow">&rarr;</span>
-          <p>
-            Whether you want to build core public speaking skills from home, join weekly live debates in Oxford, or test yourself in competitions &mdash; jump in wherever you feel most comfortable.
-          </p>
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Three Levels of Learning</span>
+          <h2>Jump in <span class="mark">anywhere</span></h2>
         </div>
+        <p>Whether you want to build core public speaking skills from home, join weekly live debates in Oxford, or test yourself in competitions &mdash; jump in wherever you feel most comfortable.</p>
       </div>
 
-      <div class="services-grid">
-        <!-- Level 1: Learn -->
-        <div class="service-card reveal reveal-delay-1">
-          <div class="service-card-top">
-            <span class="service-num">LEVEL / 01 &bull; ONLINE WEBINAR</span>
+      <div class="grid-3">
+        <article class="card level-card level-card--featured reveal reveal-delay-1">
+          <div class="level-card-top">
+            <div class="level-card-head">
+              <span class="feature-num"><span>Level 01 &middot; Online</span></span>
+              <span class="tag tag--green">Running now</span>
+            </div>
             <h3>Learn</h3>
-            <p>
-              <strong>Online Skills Workshops:</strong> 30-minute sessions designed to build your foundational debate skills. Perfect for beginners.
-            </p>
-            <div style="background: var(--info-box-bg); padding: 1rem 1.25rem; border-radius: 10px; border: 1px solid var(--info-box-border); font-size: 0.92rem; color: var(--info-box-text); line-height: 1.85; margin-top: 1.25rem;">
-              Sundays, 9:00 &ndash; 9:30 AM<br>
-              Google Meet (Nationwide)<br>
-              <strong>Back on 8 Nov at 9am &mdash; see you then!</strong>
-            </div>
+            <p><strong>Online Skills Workshops:</strong> 30-minute sessions designed to build your foundational debate skills. Perfect for beginners.</p>
           </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbnTofT5rCoszg3Ss6L62FXiu2O5CAVo17pNzqVoErUJhwug/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1.5rem;">APPLY VIA GOOGLE FORM &rarr;</a>
-        </div>
+          <ul class="level-meta">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Sundays, 9:00 &ndash; 9:30 AM (UK time)</li>
+            <li class="local-time-row" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="local-time" data-uk-start="09:00" data-uk-end="09:30" data-weekday="0"></span></li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg> Google Meet &mdash; join from anywhere</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Recordings sent to all sign-ups</li>
+          </ul>
+          <div class="cal-row"><span class="cal-label">Add to calendar</span><a class="cal-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=POI%20Online%20Debate%20Workshop&amp;dates=20261122T090000/20261122T093000&amp;ctz=Europe/London&amp;recur=RRULE:FREQ%3DWEEKLY%3BBYDAY%3DSU&amp;details=Free%2030-minute%20online%20debate%20workshop%20from%20POI%20%E2%80%93%20Power%20of%20Interest.%20Occasional%20weeks%20may%20be%20skipped%20%E2%80%93%20see%20poi.org.uk%20for%20updates.&amp;location=Google%20Meet%20(online)" target="_blank" rel="noopener noreferrer">Google</a><a class="cal-btn" href="assets/calendar/poi-sunday-workshop.ics">Apple / Outlook</a></div>
+          <a href="#sign-up" class="btn btn-primary" data-pick-for="signup-form" data-pick="online">Sign Up Free <span class="arrow">&rarr;</span></a>
+        </article>
 
-        <!-- Level 2: Practice -->
-        <div class="service-card reveal reveal-delay-2">
-          <div class="service-card-top">
-            <span class="service-num">LEVEL / 02 &bull; IN-PERSON, OXFORD</span>
-            <h3>Practice</h3>
-            <p>
-              <strong>In-Person Debates:</strong> Turn theory into practice through weekly judged rounds in a friendly, supportive learning environment.
-            </p>
-            <div style="background: var(--info-box-bg); padding: 1rem 1.25rem; border-radius: 10px; border: 1px solid var(--info-box-border); font-size: 0.92rem; color: var(--info-box-text); line-height: 1.85; margin-top: 1.25rem;">
-              Wednesdays, 16:30 &ndash; 18:00<br>
-              Hosted in Summertown, Oxford<br>
-              <strong>Coming soon!</strong>
+        <article class="card level-card reveal reveal-delay-2">
+          <div class="level-card-top">
+            <div class="level-card-head">
+              <span class="feature-num"><span>Level 02 &middot; Oxford</span></span>
+              <span class="tag tag--yellow">From 2027</span>
             </div>
+            <h3>Practise</h3>
+            <p><strong>In-Person Debates:</strong> Turn theory into practice through weekly judged rounds in a friendly, supportive learning environment.</p>
           </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbnTofT5rCoszg3Ss6L62FXiu2O5CAVo17pNzqVoErUJhwug/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1.5rem;">APPLY VIA GOOGLE FORM &rarr;</a>
-        </div>
+          <ul class="level-meta">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Wednesdays, 16:30 &ndash; 18:00 (UK time)</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Hosted in Summertown, Oxford</li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Up to 24 students per cohort</li>
+          </ul>
+          <a href="#sign-up" class="btn btn-primary" data-pick-for="signup-form" data-pick="oxford">Join the 2027 Waitlist <span class="arrow">&rarr;</span></a>
+        </article>
 
-        <!-- Level 3: Perfect -->
-        <div class="service-card reveal reveal-delay-3">
-          <div class="service-card-top">
-            <span class="service-num">LEVEL / 03 &bull; TOURNAMENTS</span>
+        <article class="card level-card reveal reveal-delay-3">
+          <div class="level-card-top">
+            <div class="level-card-head">
+              <span class="feature-num"><span>Level 03 &middot; Tournaments</span></span>
+              <span class="tag">Optional</span>
+            </div>
             <h3>Polish</h3>
-            <p>
-              <strong>Competitions:</strong> Put your speaking skills and quick thinking to the test in structured student tournaments with awards and feedback.
-            </p>
-            <div style="background: var(--info-box-bg); padding: 1rem 1.25rem; border-radius: 10px; border: 1px solid var(--info-box-border); font-size: 0.92rem; color: var(--info-box-text); line-height: 1.85; margin-top: 1.25rem;">
-              100% optional, friendly, and fun<br>
-              Announcements coming soon
+            <p><strong>Competitions:</strong> Put your speaking skills and quick thinking to the test in structured student tournaments with awards and feedback.</p>
+          </div>
+          <ul class="level-meta">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 100% optional, friendly, and fun</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg> Announcements coming soon</li>
+          </ul>
+          <button type="button" class="btn btn-outline" disabled>Coming Soon</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIGN UP ===== -->
+  <section class="section section--alt" id="sign-up">
+    <div class="container signup-grid">
+      <div class="signup-intro reveal">
+        <span class="eyebrow">Sign Up</span>
+        <h2>Save your <span class="mark">seat</span></h2>
+        <p class="lede">It&rsquo;s free and takes about a minute. We&rsquo;ll be in touch by email with everything you need to join.</p>
+        <ul class="check-list">
+          <li><span>Online workshops every Sunday, 9:00 AM UK time<span class="local-time local-time--block" data-uk-start="09:00" data-uk-end="09:30" data-weekday="0" hidden></span></span></li>
+          <li>Join from anywhere in the world &mdash; no experience needed</li>
+          <li>In-person Oxford sessions start in 2027 &mdash; join the waitlist</li>
+          <li>Under 13? We&rsquo;ll also need a parent or guardian&rsquo;s details</li>
+        </ul>
+      </div>
+
+      <div class="card form-card reveal reveal-delay-2" data-form-wrap>
+        <form id="signup-form" action="https://formspree.io/f/xykbrlbj" method="POST" data-ajax>
+          <input type="hidden" name="_subject" value="New Session Sign-Up" />
+          <input type="hidden" name="Time zone" id="signup-tz" value="" />
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <fieldset class="form-fieldset" data-require-one="Please choose at least one session.">
+            <legend class="form-label">Which sessions would you like?</legend>
+            <label class="form-check"><input type="checkbox" name="Sessions" value="Online Sunday workshops" data-pick="online" /> <span>Online Sunday workshops <small>9:00 AM UK time</small></span></label>
+            <label class="form-check"><input type="checkbox" name="Sessions" value="In-person Oxford (2027 waitlist)" data-pick="oxford" /> <span>In-person Oxford sessions <small>2027 waitlist</small></span></label>
+          </fieldset>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="signup-name">Student&rsquo;s full name</label>
+              <input class="form-input" type="text" id="signup-name" name="Student name" required autocomplete="name" placeholder="Full name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="signup-email">Email address</label>
+              <input class="form-input" type="email" id="signup-email" name="Email" required autocomplete="email" placeholder="you@example.com" />
             </div>
           </div>
-          <button class="btn btn-outline" style="width: 100%; text-align: center; cursor: not-allowed; opacity: 0.5; pointer-events: none; margin-top: 1.5rem;" disabled>COMING SOON &rarr;</button>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="signup-age">Student&rsquo;s age</label>
+              <select class="form-select" id="signup-age" name="Age" required>
+                <option value="" disabled selected>Select age</option>
+                <option>Under 11</option><option>11</option><option>12</option><option>13</option><option>14</option>
+                <option>15</option><option>16</option><option>17</option><option>18</option><option>19 or over</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="signup-country">Country</label>
+              <input class="form-input" type="text" id="signup-country" name="Country" required autocomplete="country-name" placeholder="e.g. United Kingdom" />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="signup-year">School year / grade <span class="form-optional">optional</span></label>
+              <input class="form-input" type="text" id="signup-year" name="School year" placeholder="e.g. Year 9 or Grade 8" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="signup-exp">Debate experience <span class="form-optional">optional</span></label>
+              <select class="form-select" id="signup-exp" name="Experience">
+                <option value="" selected>Choose one</option>
+                <option>None &ndash; complete beginner</option>
+                <option>A little</option>
+                <option>Some competitive debating</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="form-fieldset form-fieldset--box" id="guardian-fields">
+            <legend class="form-label">Parent or guardian <span class="form-optional" id="guardian-status">optional</span></legend>
+            <p class="form-hint" id="guardian-hint" hidden>Because the student is under 13, we need a parent or guardian&rsquo;s details and permission.</p>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="signup-parent-name">Name</label>
+                <input class="form-input" type="text" id="signup-parent-name" name="Parent name" autocomplete="off" placeholder="Parent or guardian's name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="signup-parent-email">Email</label>
+                <input class="form-input" type="email" id="signup-parent-email" name="Parent email" autocomplete="off" placeholder="parent@example.com" />
+              </div>
+            </div>
+            <label class="form-check" id="guardian-consent" hidden><input type="checkbox" name="Parent permission" value="Yes" /> <span>I am the parent or guardian, or my parent or guardian has agreed to me signing up.</span></label>
+          </fieldset>
+
+          <div class="form-group">
+            <label class="form-label" for="signup-found">How did you hear about POI? <span class="form-optional">optional</span></label>
+            <input class="form-input" type="text" id="signup-found" name="How found" placeholder="e.g. Instagram, a friend, my school..." />
+          </div>
+
+          <label class="form-check form-check--consent"><input type="checkbox" name="Privacy consent" value="Yes" required /> <span>I agree to POI using these details to organise sessions and contact me about them, as set out in our <a href="policies.html#operations" class="inline-link">privacy and data policies</a>.</span></label>
+
+          <p class="form-tz" hidden>Your time zone: <strong data-tz-out></strong></p>
+          <p class="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-primary btn-block">Sign Up Free <span class="arrow">&rarr;</span></button>
+        </form>
+
+        <div class="form-success" tabindex="-1" hidden>
+          <div class="form-success-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <h3>You&rsquo;re signed up!</h3>
+          <p>Thanks &mdash; we&rsquo;ll be in touch by email with everything you need to join. Add the Sunday workshops to your calendar so you don&rsquo;t miss one:</p>
+          <div class="cal-row"><span class="cal-label">Add to calendar</span><a class="cal-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=POI%20Online%20Debate%20Workshop&amp;dates=20261122T090000/20261122T093000&amp;ctz=Europe/London&amp;recur=RRULE:FREQ%3DWEEKLY%3BBYDAY%3DSU&amp;details=Free%2030-minute%20online%20debate%20workshop%20from%20POI%20%E2%80%93%20Power%20of%20Interest.%20Occasional%20weeks%20may%20be%20skipped%20%E2%80%93%20see%20poi.org.uk%20for%20updates.&amp;location=Google%20Meet%20(online)" target="_blank" rel="noopener noreferrer">Google</a><a class="cal-btn" href="assets/calendar/poi-sunday-workshop.ics">Apple / Outlook</a></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== YOUR PATHWAY ===== -->
-  <section class="section section--alt">
+
+  <!-- ===== HOW IT FITS ===== -->
+  <section class="section">
     <div class="container">
-      <div class="section-header-split reveal">
-        <h2>How It All Fits Together</h2>
-        <div class="section-header-desc">
-          <span class="arrow">&rarr;</span>
-          <p>
-            Our three levels build on each other, but you can join at any stage. Can't attend a live webinar? We record every session and send it out to all sign-ups.
-          </p>
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Your Pathway</span>
+          <h2>How it all fits together</h2>
         </div>
+        <p>Our three levels build on each other, but you can join at any stage. Can&rsquo;t attend a live webinar? We record every session and send it out to all sign-ups.</p>
       </div>
 
-      <!-- Pathway Steps (Continuous Connecting Line 01 -> 02 -> 03) -->
-      <div style="max-width: 760px; margin: 0 auto; position: relative;">
-        <!-- Continuous unbroken connecting line -->
-        <div style="position: absolute; left: 28px; top: 28px; bottom: 28px; width: 3px; background: var(--yellow); opacity: 0.6; transform: translateX(-50%); border-radius: 3px; z-index: 0;"></div>
-
-        <!-- Step 1 -->
-        <div class="reveal reveal-delay-1" style="display: flex; gap: 2rem; align-items: flex-start; position: relative; padding-bottom: 3rem; z-index: 1;">
-          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--step-circle-bg); border: 2.5px solid var(--yellow); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; color: var(--heading-color); flex-shrink: 0; box-shadow: 0 0 18px rgba(242, 197, 15, 0.35);">01</div>
-          <div style="background: var(--bg-card); border: 1.5px solid var(--card-border); border-radius: 20px; padding: 2rem 2.4rem; flex: 1; box-shadow: var(--card-shadow);">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; flex-wrap: wrap;">
-              <h3 style="margin: 0; font-size: 1.35rem; color: var(--heading-color); font-weight: 800;">Learn from Home</h3>
-              <span style="background: var(--yellow-bg); color: var(--heading-color); border: 1px solid var(--yellow-border); padding: 0.25rem 0.85rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;">Online</span>
-            </div>
-            <p style="margin: 0; color: var(--text-slate); line-height: 1.75; font-size: 0.98rem;">Join our Sunday webinars to build debate theory, argument structure, and rebuttal techniques &mdash; all from the comfort of home at your own pace.</p>
+      <div class="pathway">
+        <div class="step reveal reveal-delay-1">
+          <div class="step-dot step-dot--filled">01</div>
+          <div>
+            <h3>Learn from Home <span class="tag tag--cyan">Online</span></h3>
+            <p>Join our Sunday webinars (9:00 AM UK time) from anywhere in the world to build debate theory, argument structure, and rebuttal techniques &mdash; all from the comfort of home at your own pace.</p>
           </div>
         </div>
-
-        <!-- Step 2 -->
-        <div class="reveal reveal-delay-2" style="display: flex; gap: 2rem; align-items: flex-start; position: relative; padding-bottom: 3rem; z-index: 1;">
-          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--step-circle-bg); border: 2.5px solid var(--yellow); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; color: var(--heading-color); flex-shrink: 0; box-shadow: 0 0 18px rgba(242, 197, 15, 0.35);">02</div>
-          <div style="background: var(--bg-card); border: 1.5px solid var(--card-border); border-radius: 20px; padding: 2rem 2.4rem; flex: 1; box-shadow: var(--card-shadow);">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; flex-wrap: wrap;">
-              <h3 style="margin: 0; font-size: 1.35rem; color: var(--heading-color); font-weight: 800;">Practise In Person</h3>
-              <span style="background: var(--yellow-bg); color: var(--heading-color); border: 1px solid var(--yellow-border); padding: 0.25rem 0.85rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;">Oxford</span>
-            </div>
-            <p style="margin: 0; color: var(--text-slate); line-height: 1.75; font-size: 0.98rem;">Put those skills into action in weekly live debate chambers. You'll be matched with a partner, given a motion and 15 minutes of prep, and judged with supportive feedback.</p>
+        <div class="step reveal reveal-delay-2">
+          <div class="step-dot">02</div>
+          <div>
+            <h3>Practise In Person <span class="tag tag--yellow">Oxford</span></h3>
+            <p>Put those skills into action in weekly live debate chambers. You&rsquo;ll be matched with a partner, given a motion and 15 minutes of prep, and judged with supportive feedback.</p>
           </div>
         </div>
-
-        <!-- Step 3 -->
-        <div class="reveal reveal-delay-3" style="display: flex; gap: 2rem; align-items: flex-start; position: relative; z-index: 1;">
-          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--step-circle-bg); border: 2.5px solid var(--yellow); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; color: var(--heading-color); flex-shrink: 0; box-shadow: 0 0 18px rgba(242, 197, 15, 0.35);">03</div>
-          <div style="background: var(--bg-card); border: 1.5px solid var(--card-border); border-radius: 20px; padding: 2rem 2.4rem; flex: 1; box-shadow: var(--card-shadow);">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; flex-wrap: wrap;">
-              <h3 style="margin: 0; font-size: 1.35rem; color: var(--heading-color); font-weight: 800;">Compete &amp; Polish</h3>
-              <span style="background: var(--yellow-bg); color: var(--heading-color); border: 1px solid var(--yellow-border); padding: 0.25rem 0.85rem; border-radius: 50px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;">Tournaments</span>
-            </div>
-            <p style="margin: 0; color: var(--text-slate); line-height: 1.75; font-size: 0.98rem;">Test yourself in friendly student competitions with structured rounds, awards, and comprehensive feedback from expert adjudicators. 100% optional and always fun.</p>
+        <div class="step reveal reveal-delay-3">
+          <div class="step-dot">03</div>
+          <div>
+            <h3>Compete &amp; Polish <span class="tag">Tournaments</span></h3>
+            <p>Test yourself in friendly student competitions with structured rounds, awards, and comprehensive feedback from expert adjudicators. 100% optional and always fun.</p>
           </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SESSION RESOURCES CALLOUT ===== -->
-  <section class="section" style="padding: 3rem 0 4rem;">
-    <div class="container" style="text-align: center;">
-      <div class="reveal">
-        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1rem;">Already attended a session? Access your slides and recordings.</p>
-        <a href="resources.html" class="session-resources-link">
-          Session Resources &rarr;
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-
-  <footer class="site-footer">
+  <!-- ===== RESOURCES CALLOUT ===== -->
+  <section class="section--tight">
     <div class="container">
-      <div class="footer-inner" style="border-top: none; padding-top: 0;">
+      <div class="notice reveal">
+        <div class="notice-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        <div>
+          <h3>Already attended a session?</h3>
+          <p>Access your slides, motion guides, and recordings in the members area.</p>
+        </div>
+        <a href="resources.html" class="btn btn-outline">Session Resources <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Ready to find your voice?</h2>
+          <p>Get in touch with our team or register for our next session &mdash; it&rsquo;s free, and no experience is needed.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="sessions.html#sign-up" class="btn btn-dark">Join a Session <span class="arrow">&rarr;</span></a>
+          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-newsletter" data-form-wrap>
+      <div class="footer-newsletter-copy">
+        <h4>Stay in the loop</h4>
+        <p>Session breaks, new resources, and news about the 2027 Oxford sessions &mdash; straight to your inbox.</p>
+      </div>
+      <form class="newsletter-form" action="https://formspree.io/f/xykbrlbj" method="POST" data-ajax>
+        <input type="hidden" name="_subject" value="Mailing List Sign-Up" />
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="newsletter-row">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input class="form-input" type="email" id="newsletter-email" name="Email" required autocomplete="email" placeholder="Your email address" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </div>
+        <label class="form-check form-check--dark"><input type="checkbox" name="Consent" value="Yes" required /> <span>I&rsquo;m 13 or over (or a parent or guardian) and happy to get emails from POI. You can unsubscribe at any time.</span></label>
+        <p class="form-error" role="alert" hidden></p>
+      </form>
+      <div class="form-success" tabindex="-1" hidden><strong>You&rsquo;re subscribed!</strong> Thanks &mdash; look out for our next update.</div>
+    </div>
+    <div class="footer-grid">
+      <div>
         <div class="footer-brand-row">
-          <img src="logo.jpg" alt="POI Logo" class="footer-logo" />
-          <span class="footer-brand-name">POI &ndash; Power of Interest</span>
+          <img loading="lazy" decoding="async" src="assets/images/logo_no_words.jpg" alt="POI logo" class="footer-logo" width="52" height="52" />
+          <span class="footer-brand-name">POI<small>Power of Interest UK</small></span>
         </div>
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="index.html">Home</a>
-          <a href="about.html">Our Story</a>
-          <a href="sessions.html">Sessions</a>
-          <a href="resources.html">Resources</a>
-          <a href="volunteering.html">Volunteer</a>
-          <a href="https://www.zeffy.com/en-GB/donation-form/your-words-your-way" target="_blank" rel="noopener noreferrer">Support Us</a>
-          <a href="policies.html">Policies</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <p class="footer-copyright">&copy; 2026 POI &ndash; Power of Interest UK. All rights reserved.</p>
-        <p class="footer-meta">Company Number: 17391401 (registered with Companies House) &bull; Proudly based in Oxford, Oxfordshire, England, serving students across the UK. &bull; Typeface: <a href="fonts/LICENSE-Sora.txt" target="_blank" style="color: inherit; text-decoration: underline;">Sora (SIL OFL)</a></p>
+        <p class="footer-blurb">A student-founded not-for-profit building confident young speakers through free debate workshops &mdash; online for students worldwide, and in person in Oxford.</p>
+        <div class="socials"><a href="https://www.linkedin.com/company/poi-power-of-interest/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="POI on LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a><a href="https://www.instagram.com/power_of_interest" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="POI on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="sessions.html">Sessions</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="motions.html">Motion Bank</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="sessions.html#sign-up">Sign Up</a></li>
+          <li><a href="volunteering.html">Volunteer</a></li>
+          <li><a href="support.html">Support Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Organisation</h4>
+        <ul>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="policies.html#safeguarding">Safeguarding</a></li>
+          <li><a href="mailto:contact@poi.org.uk">contact@poi.org.uk</a></li>
+          <li><a href="contact.html">Summertown, Oxford</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
-
-  <script src="main.js"></script>
+    <div class="footer-bottom">
+      <p>&copy; 2026 POI &ndash; Power of Interest UK. All rights reserved. Company Number: 17391401 (registered with Companies House).</p>
+      <p>Proudly based in Oxford, Oxfordshire, England, serving students worldwide &middot; Typeface: <a href="assets/fonts/LICENSE-Sora.txt" target="_blank">Sora (SIL OFL)</a></p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js?v=3.1"></script>
 </body>
 </html>

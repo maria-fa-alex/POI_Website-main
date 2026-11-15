@@ -4,6 +4,7 @@ Allow: /
 # Block non-page resources from being indexed
 Disallow: /backup-site/
 Disallow: /resources.html
+Disallow: /docs/slides/
 Disallow: /*.jpeg$
 Disallow: /*.jpg$
 Disallow: /*.png$

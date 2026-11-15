@@ -1,0 +1,6 @@
+# GitHub Pages settings.
+# The site is plain HTML - this file only keeps notes off the live website.
+# Folders starting with "_" (like _build/) and dot-files are skipped automatically.
+exclude:
+  - README.md
+  - POI_Website-main.code-workspace
