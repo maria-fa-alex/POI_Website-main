@@ -1,0 +1,106 @@
+  <!-- ===== SIGN UP ===== -->
+  <section class="section section--alt" id="sign-up">
+    <div class="container signup-grid">
+      <div class="signup-intro reveal">
+        <span class="eyebrow">Sign Up</span>
+        <h2>Save your <span class="mark">seat</span></h2>
+        <p class="lede">It&rsquo;s free and takes about a minute. We&rsquo;ll be in touch by email with everything you need to join.</p>
+        <ul class="check-list">
+          <li><span>Online workshops every Sunday, 9:00 AM UK time<span class="local-time local-time--block" data-uk-start="09:00" data-uk-end="09:30" data-weekday="0" hidden></span></span></li>
+          <li>Join from anywhere in the world &mdash; no experience needed</li>
+          <li>In-person Oxford sessions start in 2027 &mdash; join the waitlist</li>
+          <li>Under 13? We&rsquo;ll also need a parent or guardian&rsquo;s details</li>
+        </ul>
+      </div>
+
+      <div class="card form-card reveal reveal-delay-2" data-form-wrap>
+        <form id="signup-form" action="{{FORMSPREE}}" method="POST" data-ajax>
+          <input type="hidden" name="_subject" value="New Session Sign-Up" />
+          <input type="hidden" name="Time zone" id="signup-tz" value="" />
+          {{HONEYPOT}}
+
+          <fieldset class="form-fieldset" data-require-one="Please choose at least one session.">
+            <legend class="form-label">Which sessions would you like?</legend>
+            <label class="form-check"><input type="checkbox" name="Sessions" value="Online Sunday workshops" data-pick="online" /> <span>Online Sunday workshops <small>9:00 AM UK time</small></span></label>
+            <label class="form-check"><input type="checkbox" name="Sessions" value="In-person Oxford (2027 waitlist)" data-pick="oxford" /> <span>In-person Oxford sessions <small>2027 waitlist</small></span></label>
+          </fieldset>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="signup-name">Student&rsquo;s full name</label>
+              <input class="form-input" type="text" id="signup-name" name="Student name" required autocomplete="name" placeholder="Full name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="signup-email">Email address</label>
+              <input class="form-input" type="email" id="signup-email" name="Email" required autocomplete="email" placeholder="you@example.com" />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="signup-age">Student&rsquo;s age</label>
+              <select class="form-select" id="signup-age" name="Age" required>
+                <option value="" disabled selected>Select age</option>
+                <option>Under 11</option><option>11</option><option>12</option><option>13</option><option>14</option>
+                <option>15</option><option>16</option><option>17</option><option>18</option><option>19 or over</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="signup-country">Country</label>
+              <input class="form-input" type="text" id="signup-country" name="Country" required autocomplete="country-name" placeholder="e.g. United Kingdom" />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="signup-year">School year / grade <span class="form-optional">optional</span></label>
+              <input class="form-input" type="text" id="signup-year" name="School year" placeholder="e.g. Year 9 or Grade 8" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="signup-exp">Debate experience <span class="form-optional">optional</span></label>
+              <select class="form-select" id="signup-exp" name="Experience">
+                <option value="" selected>Choose one</option>
+                <option>None &ndash; complete beginner</option>
+                <option>A little</option>
+                <option>Some competitive debating</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="form-fieldset form-fieldset--box" id="guardian-fields">
+            <legend class="form-label">Parent or guardian <span class="form-optional" id="guardian-status">optional</span></legend>
+            <p class="form-hint" id="guardian-hint" hidden>Because the student is under 13, we need a parent or guardian&rsquo;s details and permission.</p>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="signup-parent-name">Name</label>
+                <input class="form-input" type="text" id="signup-parent-name" name="Parent name" autocomplete="off" placeholder="Parent or guardian's name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="signup-parent-email">Email</label>
+                <input class="form-input" type="email" id="signup-parent-email" name="Parent email" autocomplete="off" placeholder="parent@example.com" />
+              </div>
+            </div>
+            <label class="form-check" id="guardian-consent" hidden><input type="checkbox" name="Parent permission" value="Yes" /> <span>I am the parent or guardian, or my parent or guardian has agreed to me signing up.</span></label>
+          </fieldset>
+
+          <div class="form-group">
+            <label class="form-label" for="signup-found">How did you hear about POI? <span class="form-optional">optional</span></label>
+            <input class="form-input" type="text" id="signup-found" name="How found" placeholder="e.g. Instagram, a friend, my school..." />
+          </div>
+
+          <label class="form-check form-check--consent"><input type="checkbox" name="Privacy consent" value="Yes" required /> <span>I agree to POI using these details to organise sessions and contact me about them, as set out in our <a href="policies.html#operations" class="inline-link">privacy and data policies</a>.</span></label>
+
+          <p class="form-tz" hidden>Your time zone: <strong data-tz-out></strong></p>
+          <p class="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-primary btn-block">Sign Up Free <span class="arrow">&rarr;</span></button>
+        </form>
+
+        <div class="form-success" tabindex="-1" hidden>
+          <div class="form-success-icon">{{ICON:check}}</div>
+          <h3>You&rsquo;re signed up!</h3>
+          <p>Thanks &mdash; we&rsquo;ll be in touch by email with everything you need to join. Add the Sunday workshops to your calendar so you don&rsquo;t miss one:</p>
+          {{CAL_ROW}}
+        </div>
+      </div>
+    </div>
+  </section>

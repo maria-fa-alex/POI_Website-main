@@ -1,0 +1,66 @@
+{{HEADER:policies}}
+
+<main id="main">
+
+  <section class="page-hero page-hero--simple">
+    <div class="container page-hero-grid">
+      <div class="reveal">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Policies</span></nav>
+        <span class="eyebrow">Governance &amp; Transparency</span>
+        <h1>Our <span class="mark">Policies</span></h1>
+        <p class="lede">Official governance documents, safeguarding protocols, and regulatory standards for Power of Interest UK.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="safeguard reveal" id="safeguarding">
+        <div class="safeguard-icon">{{ICON:shield}}</div>
+        <div>
+          <span class="eyebrow">Safeguarding First</span>
+          <h2>Every student&rsquo;s safety comes first</h2>
+          <p><strong>POI is dedicated to the safety, protection, and welfare of every student and volunteer.</strong> All our directors, workshop mentors, debate judges, and session volunteers undergo Enhanced DBS background checks and adhere strictly to our child protection and safeguarding frameworks.</p>
+        </div>
+        <a href="#" id="open-safeguarding-popup" class="btn btn-primary" role="button" aria-haspopup="dialog" aria-controls="safeguarding-popup">Contact Safeguarding Lead <span class="arrow">&rarr;</span></a>
+      </div>
+
+      <div class="with-aside">
+        <aside class="aside-nav" aria-label="Policy categories">
+          <span class="eyebrow">Policy Directory</span>
+          {{POLICY_NAV}}
+          <div class="aside-help">
+            <strong>22 operating policies</strong>
+            The governance frameworks established by POI &ndash; Power of Interest UK.
+          </div>
+        </aside>
+
+        <div>
+{{POLICY_GROUPS}}
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{FOOTER}}
+
+<!-- Safeguarding Lead contact popup -->
+<div id="safeguarding-popup" class="sg-popup-overlay" role="dialog" aria-modal="true" aria-labelledby="sg-popup-title" hidden>
+  <div class="sg-popup">
+    <button type="button" class="sg-popup-close" id="sg-popup-close" aria-label="Close">&times;</button>
+    <p class="sg-popup-eyebrow">Designated Safeguarding Lead</p>
+    <h2 id="sg-popup-title" class="sg-popup-name">Vivian Okolie</h2>
+    <p class="sg-popup-text">For any safeguarding questions or to report a concern, please email:</p>
+    <div class="sg-popup-email-row">
+      <span class="sg-popup-email" id="sg-popup-email">vivian@poi.org.uk</span>
+      <button type="button" class="sg-popup-copy" id="sg-popup-copy">Copy</button>
+    </div>
+    <a href="mailto:vivian@poi.org.uk" class="sg-popup-mail" id="sg-popup-mail">Open in email app &rarr;</a>
+    <p class="sg-popup-note">If a child is in immediate danger, call 999.</p>
+  </div>
+</div>
+
+{{POLICY_SCRIPT}}
+<script src="main.js?v=3.0"></script>

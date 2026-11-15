@@ -1,0 +1,73 @@
+{{HEADER:motions}}
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div class="reveal">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Motion Bank</span></nav>
+        <span class="eyebrow">Practise &amp; Prepare</span>
+        <h1>Motion <span class="mark">Bank</span></h1>
+        <p class="lede">Every motion we&rsquo;ve debated in our sessions, plus extra ones to practise with. Pick one, start the 15-minute prep timer, and build your case &mdash; just like a real BP round.</p>
+      </div>
+      <div class="page-hero-visual reveal reveal-delay-2">
+        <div class="illus illus--tilt">
+          <img src="background_library.jpg" alt="Watercolour illustration of a notebook full of argument maps beside a fountain pen" width="1024" height="559" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="practice-panel reveal" id="practice">
+        <div class="practice-copy">
+          <span class="eyebrow">Practice Mode</span>
+          <p class="practice-motion" id="practice-motion" aria-live="polite">Hit &ldquo;Random motion&rdquo; or choose one below to start practising.</p>
+          <p class="practice-meta">In British Parliamentary debate you get 15 minutes to prepare with your partner &mdash; no research allowed.</p>
+        </div>
+        <div class="timer">
+          <div class="timer-display" id="timer-display" role="timer" aria-label="Prep time remaining">15:00</div>
+          <p class="timer-status" id="timer-status" aria-live="assertive"></p>
+          <div class="timer-btns">
+            <button type="button" class="btn btn-primary" id="random-motion">{{ICON:shuffle}} Random motion</button>
+            <button type="button" class="btn btn-outline" id="timer-toggle">Start timer</button>
+            <button type="button" class="btn-icon" id="timer-reset" aria-label="Reset timer" title="Reset timer">{{ICON:reset}}</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="motion-tools reveal">
+        <div class="motion-search-wrap">
+          {{ICON:search}}
+          <label class="sr-only" for="motion-search">Search motions</label>
+          <input id="motion-search" class="form-input motion-search" type="search" placeholder="Search motions, e.g. &ldquo;AI&rdquo; or &ldquo;prison&rdquo;" autocomplete="off" />
+        </div>
+        <div class="chips" role="group" aria-label="Filter by topic">
+          {{TOPIC_CHIPS}}
+        </div>
+      </div>
+      <p class="motion-count" id="motion-count" aria-live="polite"></p>
+
+      <div class="motion-grid" id="motion-grid">
+{{MOTION_CARDS}}
+      </div>
+      <p class="motion-empty" id="motion-empty" hidden>No motions match that search. Try a different word or topic.</p>
+
+      <div class="notice mt-3 reveal">
+        <div class="notice-icon">{{ICON:book}}</div>
+        <div>
+          <h3>Want the full walkthroughs?</h3>
+          <p>Motions marked &ldquo;Guide available&rdquo; have a full Government vs Opposition walkthrough in the members&rsquo; Session Resources.</p>
+        </div>
+        <a href="resources.html" class="btn btn-outline">Session Resources <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  {{CTA}}
+</main>
+
+{{FOOTER}}
+<script src="main.js?v=3.0"></script>

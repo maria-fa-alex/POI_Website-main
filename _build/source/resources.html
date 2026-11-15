@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Session Resources | POI – Power of Interest UK</title>
+  <meta name="description" content="Access slides, recordings, and materials from POI debate sessions. Password-protected for registered session attendees." />
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="POI – Power of Interest UK" />
+  <meta property="og:title" content="Session Resources | POI UK" />
+  <meta property="og:description" content="Access slides and recordings from POI debate sessions." />
+  <meta property="og:url" content="https://poi.org.uk/resources.html" />
+  <meta property="og:image" content="https://poi.org.uk/logo.jpg" />
+  <meta property="og:locale" content="en_GB" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2.3" />
+  <link rel="icon" href="logo.jpg" type="image/jpeg" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+<div class="header-inner">
+      <a href="index.html" class="header-brand">
+        <img src="logo.jpg" alt="POI Logo" class="header-logo" />
+        <div class="header-brand-text">
+          <span class="brand-title">POI</span>
+          <span class="brand-sub">Power of Interest</span>
+        </div>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+
+        <div class="nav-actions">
+          <a href="https://www.zeffy.com/en-GB/donation-form/your-words-your-way" target="_blank" rel="noopener noreferrer" class="nav-btn-donate">Support Us</a>
+          <a href="sessions.html" class="nav-cta">Sign Up</a>
+        </div>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Our Story</a>
+      <a href="sessions.html">Sessions</a>
+      <a href="resources.html" class="active">Resources</a>
+      <a href="volunteering.html">Volunteer</a>
+      <a href="faq.html">FAQ</a>
+      <a href="policies.html">Policies</a>
+      <a href="contact.html">Contact</a>
+      <div class="mobile-nav-actions">
+        <a href="https://www.zeffy.com/en-GB/donation-form/your-words-your-way" target="_blank" rel="noopener noreferrer" class="btn btn-outline-yellow">Support Us &rarr;</a>
+        <a href="sessions.html" class="btn btn-primary">Sign Up &rarr;</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ===== PASSWORD GATE SECTION ===== -->
+    <section class="pw-gate-section" id="pw-gate">
+      <div class="pw-gate-content">
+        <div class="pw-gate-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--yellow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1.5"/></svg>
+        </div>
+        <h2>Session Resources</h2>
+        <p>This area is for registered POI session attendees. Enter the password shared in your session to access slides and recordings.</p>
+        <form class="pw-gate-form" id="pw-form" autocomplete="off">
+          <div class="pw-input-wrap">
+            <input
+              type="password"
+              id="pw-input"
+              class="pw-gate-input"
+              placeholder="Enter password"
+              autocomplete="off"
+              aria-label="Session resources password"
+              required
+            />
+            <button type="button" class="pw-toggle-vis" id="pw-toggle-vis" aria-label="Toggle password visibility" title="Show password">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <button type="submit" class="btn btn-primary pw-gate-btn">Unlock Resources &rarr;</button>
+        </form>
+        <p class="pw-gate-error" id="pw-error" role="alert" aria-live="polite"></p>
+        <p class="pw-gate-hint">Lost your password? Check the chat from your last session, or <a href="contact.html">contact us</a>.</p>
+        <div class="pw-gate-signup">
+          <p>Want access? <a href="sessions.html">Sign up for our free online sessions</a> to receive the password.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROTECTED CONTENT (hidden until unlocked) ===== -->
+    <div class="pw-protected" id="pw-protected" style="display: none;">
+
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <span class="hero-tag">Members Area</span>
+          <h1>Session Resources</h1>
+          <p>Slides, recordings, and materials from our debate sessions &mdash; all in one place.</p>
+        </div>
+      </section>
+
+      <!-- Resources Grid Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header-split">
+            <h2>Past Sessions</h2>
+            <div class="section-header-desc">
+              <span class="arrow">&rarr;</span>
+              <p>
+                Missed a session or want to revisit the material? Browse all slides and recordings below. New content is added after each session.
+              </p>
+            </div>
+          </div>
+
+          <div class="resources-grid">
+
+            <!-- Session 1 Card -->
+            <div class="resource-card">
+              <div class="resource-card-header">
+                <span class="resource-session-num">Session 01</span>
+                <span class="resource-date">Sunday 20th September 2026</span>
+              </div>
+              <h3>Intro to BP Debate</h3>
+              <p>An introduction to the British Parliamentary debate format &mdash; roles, structure, speaking order, motion types, and planning strategy.</p>
+              <div class="resource-tags">
+                <span class="resource-tag resource-tag--slides">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                  Slides
+                </span>
+                <span class="resource-tag resource-tag--online">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  Online
+                </span>
+              </div>
+              <div class="resource-links">
+                <button type="button" class="btn btn-primary resource-btn open-viewer-btn" data-viewer-src="slides/Intro_to_BP_Debate_Session_1.pdf" data-viewer-title="Session 01: Intro to BP Debate">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  View Slides
+                </button>
+              </div>
+            </div>
+
+            <!-- Session 2 Card -->
+            <div class="resource-card">
+              <div class="resource-card-header">
+                <span class="resource-session-num">Session 02</span>
+                <span class="resource-date">Sunday 27th September 2026</span>
+              </div>
+              <h3>Simple Mechanisms</h3>
+              <p>Definitions, structured rebuttals, Points of Information (POIs), building robust chains of analysis, and speech signposting &mdash; includes full motion walkthrough guide for <em>&ldquo;This House Would ban the use of AI in schools&rdquo;</em>.</p>
+              <div class="resource-tags">
+                <span class="resource-tag resource-tag--slides">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                  Slides
+                </span>
+                <span class="resource-tag resource-tag--guide">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  Motion Guide
+                </span>
+                <span class="resource-tag resource-tag--online">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  Online
+                </span>
+              </div>
+              <div class="resource-links">
+                <button type="button" class="btn btn-primary resource-btn open-viewer-btn" data-viewer-src="slides/Simple_Mechanisms_Session_2.pdf" data-viewer-title="Session 02: Simple Mechanisms (Slides)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  View Slides
+                </button>
+                <div class="resource-action-group">
+                  <button type="button" class="btn btn-primary resource-btn open-viewer-btn" data-viewer-src="slides/Session_2_Motion_Work_Through_AI_in_Schools.pdf" data-viewer-title="Session 02: Motion Walkthrough – AI in Schools" data-viewer-unrestricted="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    View Motion Guide
+                  </button>
+                  <a href="slides/Session_2_Motion_Work_Through_AI_in_Schools.pdf" download="POI_Session_2_Motion_Work_Through_AI_in_Schools.pdf" class="resource-btn-circle" aria-label="Download Motion Guide (PDF)" title="Download Motion Guide (PDF)">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Session 3 Card -->
+            <div class="resource-card">
+              <div class="resource-card-header">
+                <span class="resource-session-num">Session 03</span>
+                <span class="resource-date">Sunday 4th October 2026</span>
+              </div>
+              <h3>OG and OO</h3>
+              <p>Roles and strategies for the Opening Half &mdash; Prime Minister (PM), Leader of Opposition (LO), Deputy Prime Minister (DPM), and Deputy Leader of Opposition (DLO). Covers defining the motion, world framing, team cases, and rebuttals &mdash; includes full motion walkthrough guide for <em>&ldquo;This House Would not force students to learn a foreign language&rdquo;</em>.</p>
+              <div class="resource-tags">
+                <span class="resource-tag resource-tag--slides">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                  Slides
+                </span>
+                <span class="resource-tag resource-tag--guide">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  Motion Guide
+                </span>
+                <span class="resource-tag resource-tag--online">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  Online
+                </span>
+              </div>
+              <div class="resource-links">
+                <button type="button" class="btn btn-primary resource-btn open-viewer-btn" data-viewer-src="slides/OG_and_OO_Session_3.pdf" data-viewer-title="Session 03: OG and OO (Slides)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  View Slides
+                </button>
+                <div class="resource-action-group">
+                  <button type="button" class="btn btn-primary resource-btn open-viewer-btn" data-viewer-src="slides/Session_3_Motion_Work_Through_Foreign_Languages.pdf" data-viewer-title="Session 03: Motion Walkthrough – Foreign Languages" data-viewer-unrestricted="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    View Motion Guide
+                  </button>
+                  <a href="slides/Session_3_Motion_Work_Through_Foreign_Languages.pdf" download="POI_Session_3_Motion_Work_Through_Foreign_Languages.pdf" class="resource-btn-circle" aria-label="Download Motion Guide (PDF)" title="Download Motion Guide (PDF)">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Session 4 Card -->
+            <div class="resource-card">
+              <div class="resource-card-header">
+                <span class="resource-session-num">Session 04</span>
+                <span class="resource-date">Sunday 11th October 2026</span>
+              </div>
+              <h3>Role of the Members</h3>
+              <p>Roles and strategies for the Member speeches in the Closing Half &mdash; Member of Government (MG) and Member of Opposition (MO). Covers framing team cases, introducing extensions to build upon the Opening Half, and all-round rebuttals &mdash; includes full motion walkthrough guide for <em>&ldquo;This House Believes that phones should be banned in schools&rdquo;</em>.</p>
+              <div class="resource-tags">
+                <span class="resource-tag resource-tag--slides">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                  Slides
+                </span>
+                <span class="resource-tag resource-tag--guide">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  Motion Guide
+                </span>
+                <span class="resource-tag resource-tag--online">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  Online
+                </span>
+              </div>
+              <div class="resource-links">
+                <button type="button" class="btn btn-primary resource-btn open-viewer-btn" data-viewer-src="slides/Members_Session_4.pdf" data-viewer-title="Session 04: Role of the Members (Slides)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  View Slides
+                </button>
+                <div class="resource-action-group">
+                  <button type="button" class="btn btn-primary resource-btn open-viewer-btn" data-viewer-src="slides/Session_4_Motion_Work_Through_Phones_in_Schools.pdf" data-viewer-title="Session 04: Motion Walkthrough – Phones in Schools" data-viewer-unrestricted="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    View Motion Guide
+                  </button>
+                  <a href="slides/Session_4_Motion_Work_Through_Phones_in_Schools.pdf" download="POI_Session_4_Motion_Work_Through_Phones_in_Schools.pdf" class="resource-btn-circle" aria-label="Download Motion Guide (PDF)" title="Download Motion Guide (PDF)">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Session 5 Card -->
+            <div class="resource-card">
+              <div class="resource-card-header">
+                <span class="resource-session-num">Session 05</span>
+                <span class="resource-date">Sunday 18th October 2026</span>
+              </div>
+              <h3>Motion Planning &amp; Walkthrough</h3>
+              <p>In-depth debate preparation and motion analysis for <em>&ldquo;This House Would abolish prison as a punishment for non-violent crimes&rdquo;</em> &mdash; featuring Government definitions, UK legal context (Magistrates' Courts), recidivism, and prison overcrowding arguments alongside Opposition counter-framing, general deterrence, incapacitation, and the limits of non-custodial penalties.</p>
+              <div class="resource-tags">
+                <span class="resource-tag resource-tag--guide">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  Motion Guide
+                </span>
+                <span class="resource-tag resource-tag--online">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  Online
+                </span>
+              </div>
+              <div class="resource-links">
+                <div class="resource-action-group">
+                  <button type="button" class="btn btn-primary resource-btn open-viewer-btn" data-viewer-src="slides/Session_5_Motion_Work_Through_Prison_for_Non_Violent_Crimes.pdf" data-viewer-title="Session 05: Motion Walkthrough – Abolish Prison for Non-Violent Crimes" data-viewer-unrestricted="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    View Motion Guide
+                  </button>
+                  <a href="slides/Session_5_Motion_Work_Through_Prison_for_Non_Violent_Crimes.pdf" download="POI_Session_5_Motion_Work_Through_Prison_for_Non_Violent_Crimes.pdf" class="resource-btn-circle" aria-label="Download Motion Guide (PDF)" title="Download Motion Guide (PDF)">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Session 6 Card -->
+            <div class="resource-card">
+              <div class="resource-card-header">
+                <span class="resource-session-num">Session 06</span>
+                <span class="resource-date">Sunday 8th November 2026</span>
+              </div>
+              <h3>Review of BP</h3>
+              <p>A comprehensive review of British Parliamentary debate strategy and motion planning for <em>&ldquo;This House Would abolish the death penalty&rdquo;</em> &mdash; covering Government definitions, the intrinsic right to life, limited state power, fiscal and opportunity costs, and wrongful convictions alongside Opposition rebuttals, public safety, retributive justice, and deterrence.</p>
+              <div class="resource-tags">
+                <span class="resource-tag resource-tag--guide">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  Motion Guide
+                </span>
+                <span class="resource-tag resource-tag--online">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  Online
+                </span>
+              </div>
+              <div class="resource-links">
+                <div class="resource-action-group">
+                  <button type="button" class="btn btn-primary resource-btn open-viewer-btn" data-viewer-src="slides/Session_6_Motion_Work_Through_Death_Penalty.pdf" data-viewer-title="Session 06: Motion Walkthrough – Abolish the Death Penalty" data-viewer-unrestricted="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    View Motion Guide
+                  </button>
+                  <a href="slides/Session_6_Motion_Work_Through_Death_Penalty.pdf" download="POI_Session_6_Motion_Work_Through_Death_Penalty.pdf" class="resource-btn-circle" aria-label="Download Motion Guide (PDF)" title="Download Motion Guide (PDF)">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Placeholder: More Sessions Coming -->
+            <div class="resource-card resource-card--placeholder">
+              <div class="resource-card-placeholder-inner">
+                <div class="resource-placeholder-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <h3>More Sessions Coming</h3>
+                <p>New slides and recordings will appear here after each session. Check back soon!</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ===== EMBEDDED RESOURCE VIEWER MODAL ===== -->
+    <div class="resource-viewer-modal" id="resource-viewer-modal" role="dialog" aria-modal="true" aria-labelledby="viewer-modal-title" style="display: none;">
+      <div class="viewer-backdrop" id="viewer-backdrop"></div>
+      <div class="viewer-window">
+        <div class="viewer-header">
+          <div class="viewer-header-info">
+            <h3 class="viewer-title" id="viewer-modal-title">Resource Document</h3>
+            <span class="viewer-slide-num" id="viewer-page-badge" style="display: none;"></span>
+          </div>
+          <div class="viewer-header-actions">
+            <!-- Zoom controls for comfortable reading across all screen sizes -->
+            <div class="viewer-zoom-controls" id="viewer-zoom-controls" style="display: none;">
+              <button type="button" class="viewer-action-btn" id="viewer-zoom-out" aria-label="Zoom Out" title="Zoom Out">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              </button>
+              <span class="viewer-zoom-level" id="viewer-zoom-level">100%</span>
+              <button type="button" class="viewer-action-btn" id="viewer-zoom-in" aria-label="Zoom In" title="Zoom In">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              </button>
+            </div>
+            <a href="#" id="viewer-download-link" class="viewer-action-btn" download aria-label="Download Document" title="Download Document" style="display: none;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+            <a href="#" id="viewer-external-link" class="viewer-action-btn" target="_blank" rel="noopener noreferrer" aria-label="Open in new tab" title="Open in new tab" style="display: none;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <button type="button" class="viewer-close-btn" id="viewer-close-btn" aria-label="Close viewer" title="Close viewer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="viewer-body" id="viewer-body">
+          <!-- Watermark Overlay Grid to protect PowerPoint slides against photography and screenshots -->
+          <div class="viewer-watermark-overlay" id="viewer-watermark-overlay" aria-hidden="true" style="display: none;">
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+            <div class="watermark-item">POI UK &bull; CONFIDENTIAL STUDENT MATERIAL &bull; DO NOT DISTRIBUTE</div>
+          </div>
+
+          <!-- Anti-Screenshot Privacy Shield: Blurs content when window/tab loses focus -->
+          <div class="viewer-privacy-shield" id="viewer-privacy-shield" style="display: none;">
+            <div class="privacy-shield-msg">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--yellow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1.5"/></svg>
+              <h4>Protected Material</h4>
+              <p>Tap or return focus to this browser tab to continue reading.</p>
+            </div>
+          </div>
+
+          <!-- Loading Spinner -->
+          <div class="viewer-loader" id="viewer-loader" style="display: none;">
+            <div class="viewer-spinner"></div>
+            <span>Loading presentation slides...</span>
+          </div>
+
+          <!-- PDF.js Slide Deck Scrollable Viewer Container -->
+          <div class="viewer-canvas-scroll" id="viewer-canvas-scroll">
+            <div class="viewer-slides-list" id="viewer-slides-list"></div>
+          </div>
+        </div>
+
+        <div class="viewer-footer">
+          <span class="viewer-footer-notice" id="viewer-footer-notice">
+            &bull; Read-only student material &bull; Copying, downloading, printing, and distribution are strictly prohibited.
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner" style="border-top: none; padding-top: 0;">
+        <div class="footer-brand-row">
+          <img src="logo.jpg" alt="POI Logo" class="footer-logo" />
+          <span class="footer-brand-name">POI &ndash; Power of Interest</span>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our Story</a>
+          <a href="sessions.html">Sessions</a>
+          <a href="resources.html">Resources</a>
+          <a href="volunteering.html">Volunteer</a>
+          <a href="https://www.zeffy.com/en-GB/donation-form/your-words-your-way" target="_blank" rel="noopener noreferrer">Support Us</a>
+          <a href="policies.html">Policies</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-copyright">&copy; 2026 POI &ndash; Power of Interest UK. All rights reserved.</p>
+        <p class="footer-meta">Company Number: 17391401 (registered with Companies House) &bull; Proudly based in Oxford, Oxfordshire, England, serving students across the UK. &bull; Typeface: <a href="fonts/LICENSE-Sora.txt" target="_blank" style="color: inherit; text-decoration: underline;">Sora (SIL OFL)</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/pdf.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+  /* ==========================================================================
+     Resources Page – Password Gate (SHA-256 Hash Comparison)
+     ========================================================================== */
+  (function () {
+    const HASH = 'a8ba8af9d1e66166e335a25a836a663d5d5cfce71054921fd2c8acb24ea0d058';
+    const STORAGE_KEY = 'poi-resources-auth';
+
+    const gate = document.getElementById('pw-gate');
+    const protectedContent = document.getElementById('pw-protected');
+    const form = document.getElementById('pw-form');
+    const input = document.getElementById('pw-input');
+    const errorEl = document.getElementById('pw-error');
+    const toggleVis = document.getElementById('pw-toggle-vis');
+
+    if (!gate || !protectedContent) return;
+
+    // Check if already unlocked this session
+    if (sessionStorage.getItem(STORAGE_KEY) === HASH) {
+      unlockContent(true);
+    }
+
+    // Toggle password visibility with icon update
+    if (toggleVis && input) {
+      toggleVis.addEventListener('click', function () {
+        const isPassword = input.type === 'password';
+        input.type = isPassword ? 'text' : 'password';
+        toggleVis.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
+        toggleVis.setAttribute('title', isPassword ? 'Hide password' : 'Show password');
+        toggleVis.innerHTML = isPassword
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>';
+      });
+    }
+
+    // Form submit handler
+    if (form) {
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const pw = input.value.trim();
+        if (!pw) {
+          showError('Please enter a password.');
+          return;
+        }
+
+        const hash = await sha256(pw);
+        if (hash === HASH) {
+          sessionStorage.setItem(STORAGE_KEY, HASH);
+          hideError();
+          unlockContent(false);
+        } else {
+          showError('Incorrect password. Please try again.');
+          input.value = '';
+          input.focus();
+          const card = gate.querySelector('.pw-gate-content');
+          if (card) {
+            card.classList.add('pw-shake');
+            setTimeout(() => {
+              card.classList.remove('pw-shake');
+            }, 500);
+          }
+        }
+      });
+    }
+
+    function unlockContent(instant) {
+      if (instant) {
+        gate.style.display = 'none';
+        protectedContent.style.display = 'block';
+        protectedContent.style.opacity = '1';
+        protectedContent.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+      } else {
+        gate.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        gate.style.opacity = '0';
+        gate.style.transform = 'scale(0.97)';
+        setTimeout(() => {
+          gate.style.display = 'none';
+          protectedContent.style.display = 'block';
+          protectedContent.offsetHeight; // trigger reflow
+          protectedContent.style.opacity = '1';
+          protectedContent.style.transform = 'translateY(0)';
+          protectedContent.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+        }, 400);
+      }
+    }
+
+    function showError(msg) {
+      if (errorEl) {
+        errorEl.textContent = msg;
+        errorEl.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorEl) {
+        errorEl.textContent = '';
+        errorEl.style.display = 'none';
+      }
+    }
+
+    async function sha256(message) {
+      const msgBuffer = new TextEncoder().encode(message);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+  })();
+
+  /* ==========================================================================
+     Protected Embedded Resource Viewer & Anti-Screenshot / Copy Guard
+     ========================================================================== */
+  (function () {
+    const modal = document.getElementById('resource-viewer-modal');
+    const backdrop = document.getElementById('viewer-backdrop');
+    const closeBtn = document.getElementById('viewer-close-btn');
+    const modalTitle = document.getElementById('viewer-modal-title');
+    const privacyShield = document.getElementById('viewer-privacy-shield');
+    const watermarkOverlay = document.getElementById('viewer-watermark-overlay');
+    const downloadLink = document.getElementById('viewer-download-link');
+    const externalLink = document.getElementById('viewer-external-link');
+    const footerNotice = document.getElementById('viewer-footer-notice');
+    const loader = document.getElementById('viewer-loader');
+    const scrollContainer = document.getElementById('viewer-canvas-scroll');
+    const slidesList = document.getElementById('viewer-slides-list');
+    const pageBadge = document.getElementById('viewer-page-badge');
+    const zoomControls = document.getElementById('viewer-zoom-controls');
+    const zoomInBtn = document.getElementById('viewer-zoom-in');
+    const zoomOutBtn = document.getElementById('viewer-zoom-out');
+    const zoomLevelEl = document.getElementById('viewer-zoom-level');
+    const openButtons = document.querySelectorAll('.open-viewer-btn');
+
+    if (!modal || !slidesList) return;
+
+    // Configure PDF.js worker
+    if (window.pdfjsLib) {
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'js/pdf.worker.min.js';
+    }
+
+    let isCurrentUnrestricted = false;
+    let renderGeneration = 0;
+    let currentZoom = 1.0;
+    const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || window.matchMedia('(pointer: coarse)').matches;
+
+    function setZoom(newZoom) {
+      currentZoom = Math.min(Math.max(0.6, Math.round(newZoom * 10) / 10), 2.4);
+      if (zoomLevelEl) zoomLevelEl.textContent = Math.round(currentZoom * 100) + '%';
+      const canvases = slidesList.querySelectorAll('canvas');
+      canvases.forEach(cv => {
+        const bw = parseFloat(cv.dataset.baseWidth);
+        const bh = parseFloat(cv.dataset.baseHeight);
+        if (bw && bh) {
+          cv.style.width = Math.round(bw * currentZoom) + 'px';
+          cv.style.height = Math.round(bh * currentZoom) + 'px';
+        }
+      });
+    }
+
+    if (zoomInBtn) {
+      zoomInBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setZoom(currentZoom + 0.2);
+      });
+    }
+
+    if (zoomOutBtn) {
+      zoomOutBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setZoom(currentZoom - 0.2);
+      });
+    }
+
+    async function renderSlides(src, isUnrestricted, gen) {
+      if (!window.pdfjsLib) {
+        if (loader) loader.style.display = 'none';
+        slidesList.innerHTML = '<div style="color: #fff; padding: 2rem; text-align: center;">PDF Viewer library loading... Please refresh.</div>';
+        return;
+      }
+
+      try {
+        const loadingTask = window.pdfjsLib.getDocument(src);
+        const pdfDoc = await loadingTask.promise;
+        if (gen !== renderGeneration) return;
+
+        const numPages = pdfDoc.numPages;
+        const isMotionGuide = src.includes('Motion');
+        const unitName = isMotionGuide ? (numPages === 1 ? 'Page' : 'Pages') : (numPages === 1 ? 'Slide' : 'Slides');
+
+        if (pageBadge) {
+          pageBadge.textContent = `${numPages} ${unitName}`;
+          pageBadge.style.display = 'inline-flex';
+        }
+        if (zoomControls) {
+          zoomControls.style.display = 'inline-flex';
+        }
+        if (loader) {
+          loader.style.display = 'none';
+        }
+
+        const containerWidth = scrollContainer.clientWidth || window.innerWidth;
+        const isMobile = window.innerWidth <= 768;
+        const targetWidth = isMobile ? Math.min(containerWidth - 20, 680) : Math.min(containerWidth - 60, 940);
+        const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+
+        for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+          if (gen !== renderGeneration) return;
+
+          const page = await pdfDoc.getPage(pageNum);
+          if (gen !== renderGeneration) return;
+
+          const unscaledViewport = page.getViewport({ scale: 1.0 });
+          const baseScale = targetWidth / unscaledViewport.width;
+          const viewport = page.getViewport({ scale: baseScale * dpr });
+
+          const slideCard = document.createElement('div');
+          slideCard.className = 'viewer-slide-card';
+
+          const slideHeader = document.createElement('div');
+          slideHeader.className = 'viewer-slide-header';
+
+          const slideNum = document.createElement('span');
+          slideNum.className = 'viewer-slide-num';
+          slideNum.textContent = `${isMotionGuide ? 'Page' : 'Slide'} ${pageNum} of ${numPages}`;
+          slideHeader.appendChild(slideNum);
+          slideCard.appendChild(slideHeader);
+
+          const canvasWrap = document.createElement('div');
+          canvasWrap.className = 'viewer-slide-canvas-wrap';
+
+          const canvas = document.createElement('canvas');
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+          const cssWidth = Math.round(viewport.width / dpr);
+          const cssHeight = Math.round(viewport.height / dpr);
+          canvas.style.width = cssWidth + 'px';
+          canvas.style.height = cssHeight + 'px';
+          canvas.dataset.baseWidth = cssWidth;
+          canvas.dataset.baseHeight = cssHeight;
+
+          canvasWrap.appendChild(canvas);
+          slideCard.appendChild(canvasWrap);
+          slidesList.appendChild(slideCard);
+
+          await page.render({
+            canvasContext: canvas.getContext('2d'),
+            viewport: viewport
+          }).promise;
+        }
+      } catch (err) {
+        if (gen !== renderGeneration) return;
+        if (loader) loader.style.display = 'none';
+        slidesList.innerHTML = `<div style="color: #ff9090; padding: 2rem; text-align: center;">Unable to load document: ${err.message}.</div>`;
+      }
+    }
+
+    function openViewer(src, title, isUnrestricted) {
+      isCurrentUnrestricted = !!isUnrestricted;
+      const currentGen = ++renderGeneration;
+      currentZoom = 1.0;
+      if (zoomLevelEl) zoomLevelEl.textContent = '100%';
+
+      modalTitle.textContent = title || 'Resource Document';
+
+      // Watermark control: Show watermark overlay for PowerPoint slides; hide for Motion Guide
+      if (watermarkOverlay) {
+        watermarkOverlay.style.display = isCurrentUnrestricted ? 'none' : 'grid';
+      }
+
+      if (isCurrentUnrestricted) {
+        // Motion Guide: unrestricted reading, download & external tab links available
+        modal.classList.add('viewer-unrestricted');
+        if (downloadLink) {
+          downloadLink.href = src;
+          downloadLink.style.display = 'inline-flex';
+        }
+        if (externalLink) {
+          externalLink.href = src;
+          externalLink.style.display = 'inline-flex';
+        }
+        if (footerNotice) {
+          footerNotice.textContent = '• Student motion walkthrough & guide • Free to read, print, copy, and download.';
+        }
+      } else {
+        // Protected Presentation Slides: read-only, no downloads, watermarked
+        modal.classList.remove('viewer-unrestricted');
+        if (downloadLink) downloadLink.style.display = 'none';
+        if (externalLink) externalLink.style.display = 'none';
+        if (footerNotice) {
+          footerNotice.textContent = '• Read-only student material • Copying, downloading, printing, and distribution are strictly prohibited.';
+        }
+      }
+
+      if (privacyShield) {
+        privacyShield.style.display = 'none';
+      }
+
+      slidesList.innerHTML = '';
+      if (pageBadge) pageBadge.style.display = 'none';
+      if (zoomControls) zoomControls.style.display = 'none';
+      if (loader) loader.style.display = 'flex';
+      if (scrollContainer) scrollContainer.scrollTop = 0;
+
+      modal.style.display = 'flex';
+      modal.offsetHeight; // trigger reflow
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      // Render document pages to canvas
+      renderSlides(src, isCurrentUnrestricted, currentGen);
+    }
+
+    function closeViewer() {
+      renderGeneration++; // Cancel pending page renders
+      modal.classList.remove('active');
+      modal.classList.remove('viewer-unrestricted');
+      if (privacyShield) {
+        privacyShield.style.display = 'none';
+      }
+      isCurrentUnrestricted = false;
+      setTimeout(() => {
+        modal.style.display = 'none';
+        slidesList.innerHTML = '';
+        if (loader) loader.style.display = 'none';
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    openButtons.forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const src = this.getAttribute('data-viewer-src');
+        const title = this.getAttribute('data-viewer-title');
+        const isUnrestricted = this.getAttribute('data-viewer-unrestricted') === 'true';
+        if (src) openViewer(src, title, isUnrestricted);
+      });
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeViewer);
+    if (backdrop) backdrop.addEventListener('click', closeViewer);
+
+    // Close on Escape key
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeViewer();
+      }
+    });
+
+    // Anti-screenshot & privacy shield (only for protected slides)
+    // Works on phones, tablets, and desktops — blocks view when window loses focus
+    let blurTimer = null;
+
+    function showShield() {
+      if (modal.classList.contains('active') && privacyShield && !isCurrentUnrestricted) {
+        privacyShield.style.display = 'flex';
+      }
+    }
+
+    function hideShield() {
+      if (privacyShield) {
+        privacyShield.style.display = 'none';
+      }
+      clearTimeout(blurTimer);
+    }
+
+    // Desktop blur: fires immediately (no false triggers from touch)
+    // Mobile blur: debounced 350ms so touch scrolling / tapping slides doesn't trigger it
+    window.addEventListener('blur', function () {
+      if (modal.classList.contains('active') && privacyShield && !isCurrentUnrestricted) {
+        clearTimeout(blurTimer);
+        if (isTouch) {
+          // On touch devices, wait briefly — genuine focus loss persists, scroll taps don't
+          blurTimer = setTimeout(function () {
+            if (!document.hasFocus()) {
+              showShield();
+            }
+          }, 350);
+        } else {
+          showShield();
+        }
+      }
+    });
+
+    window.addEventListener('focus', hideShield);
+
+    // visibilitychange reliably fires on tab switch and app backgrounding (all platforms)
+    document.addEventListener('visibilitychange', function () {
+      if (modal.classList.contains('active') && privacyShield && !isCurrentUnrestricted) {
+        if (document.hidden) {
+          clearTimeout(blurTimer);
+          showShield();
+        } else {
+          hideShield();
+        }
+      }
+    });
+
+    // iOS Safari pagehide/pageshow for multitasking and app switcher
+    window.addEventListener('pagehide', function () {
+      showShield();
+    });
+    window.addEventListener('pageshow', function () {
+      hideShield();
+    });
+
+    // Tap or click on privacy shield dismisses it if the window is currently visible
+    if (privacyShield) {
+      ['click', 'touchstart'].forEach(evt => {
+        privacyShield.addEventListener(evt, function () {
+          if (!document.hidden) {
+            hideShield();
+          }
+        }, { passive: true });
+      });
+    }
+
+    // Disable copy, cut, and context menu in protected members area (exempt unrestricted items)
+    const protectedArea = document.getElementById('pw-protected');
+    if (protectedArea) {
+      ['copy', 'cut', 'contextmenu', 'selectstart'].forEach(evt => {
+        protectedArea.addEventListener(evt, e => {
+          if (e.target.closest('[data-viewer-unrestricted="true"]') || e.target.closest('.resource-action-group')) {
+            return true;
+          }
+          e.preventDefault();
+        });
+      });
+    }
+
+    ['copy', 'cut', 'contextmenu'].forEach(evt => {
+      modal.addEventListener(evt, e => {
+        if (!isCurrentUnrestricted) {
+          e.preventDefault();
+        }
+      });
+    });
+    // Handle orientation change or window resize gracefully on phones, tablets, and desktop
+    let resizeTimer = null;
+    window.addEventListener('resize', function () {
+      if (!modal.classList.contains('active')) return;
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        const containerWidth = scrollContainer.clientWidth || window.innerWidth;
+        const isMobile = window.innerWidth <= 768;
+        const targetWidth = isMobile ? Math.min(containerWidth - 20, 680) : Math.min(containerWidth - 60, 940);
+        const canvases = slidesList.querySelectorAll('canvas');
+        canvases.forEach(cv => {
+          const ratio = cv.height / cv.width;
+          const newBaseWidth = Math.min(targetWidth, cv.width);
+          const newBaseHeight = Math.round(newBaseWidth * ratio);
+          cv.dataset.baseWidth = newBaseWidth;
+          cv.dataset.baseHeight = newBaseHeight;
+          cv.style.width = Math.round(newBaseWidth * currentZoom) + 'px';
+          cv.style.height = Math.round(newBaseHeight * currentZoom) + 'px';
+        });
+      }, 150);
+    });
+  })();
+  </script>
+</body>
+</html>

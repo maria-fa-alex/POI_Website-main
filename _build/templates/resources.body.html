@@ -1,0 +1,70 @@
+{{HEADER:resources}}
+
+<main id="main">
+  <!-- ===== PASSWORD GATE ===== -->
+  <section class="pw-gate-section page-hero" id="pw-gate">
+    <div class="container pw-gate-grid">
+      <div class="pw-gate-content">
+        <div class="pw-gate-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F2C50F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1.5"/></svg>
+        </div>
+        <span class="eyebrow">Members Area</span>
+        <h1>Session <span class="mark">Resources</span></h1>
+        <p>This area is for registered POI session attendees. Enter the password shared in your session to access slides and recordings.</p>
+        <form class="pw-gate-form" id="pw-form" autocomplete="off">
+          <div class="pw-input-wrap">
+            <input type="password" id="pw-input" class="pw-gate-input" placeholder="Enter password" autocomplete="off" aria-label="Session resources password" required />
+            <button type="button" class="pw-toggle-vis" id="pw-toggle-vis" aria-label="Toggle password visibility" title="Show password">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <button type="submit" class="btn btn-primary pw-gate-btn">Unlock Resources <span class="arrow">&rarr;</span></button>
+        </form>
+        <p class="pw-gate-error" id="pw-error" role="alert" aria-live="polite"></p>
+        <p class="pw-gate-hint">Lost your password? Check the chat from your last session, or <a href="contact.html">contact us</a>.</p>
+        <div class="pw-gate-signup">
+          <p>Want access? <a href="sessions.html">Sign up for our free online sessions</a> to receive the password.</p>
+        </div>
+      </div>
+      <div class="page-hero-visual">
+        <div class="illus illus--tilt">
+          <img src="background_hall.jpg" alt="Illustration of a debating hall with an open, highlighted book" width="1024" height="559" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROTECTED CONTENT (hidden until unlocked) ===== -->
+  <div class="pw-protected" id="pw-protected" style="display: none;">
+    <section class="page-hero page-hero--simple">
+      <div class="container page-hero-grid">
+        <div>
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Resources</span></nav>
+          <span class="eyebrow">Members Area</span>
+          <h1>Session <span class="mark">Resources</span></h1>
+          <p class="lede">Slides, recordings, and materials from our debate sessions &mdash; all in one place.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Past Sessions</span>
+            <h2>Catch up &amp; revisit</h2>
+          </div>
+          <p>Missed a session or want to revisit the material? Browse all slides and recordings below. New content is added after each session.</p>
+        </div>
+
+{{RESOURCES_GRID}}
+      </div>
+    </section>
+  </div>
+
+{{RESOURCES_MODAL}}
+</main>
+
+{{FOOTER}}
+
+{{RESOURCES_SCRIPTS}}

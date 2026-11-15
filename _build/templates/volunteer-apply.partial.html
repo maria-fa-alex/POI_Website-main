@@ -1,0 +1,97 @@
+  <!-- ===== APPLY ===== -->
+  <section class="section" id="apply">
+    <div class="container signup-grid">
+      <div class="signup-intro reveal">
+        <span class="eyebrow">Apply</span>
+        <h2>Volunteer <span class="mark">application</span></h2>
+        <p class="lede">Tell us a little about yourself and the role you&rsquo;re interested in. We&rsquo;ll get back to you by email about next steps.</p>
+        <ul class="check-list">
+          <li>Online roles can be done from anywhere in the world</li>
+          <li>We follow safer recruitment: references and a background check (an Enhanced DBS check in the UK) before working with students</li>
+          <li><span>You&rsquo;ll be supported by our <a href="policies.html#people" class="inline-link">volunteer and conduct policies</a></span></li>
+        </ul>
+      </div>
+
+      <div class="card form-card reveal reveal-delay-2" data-form-wrap>
+        <form id="volunteer-form" action="{{FORMSPREE}}" method="POST" data-ajax>
+          <input type="hidden" name="_subject" value="New Volunteer Application" />
+          <input type="hidden" name="Time zone" data-tz-field value="" />
+          {{HONEYPOT}}
+
+          <fieldset class="form-fieldset" data-require-one="Please choose at least one role.">
+            <legend class="form-label">Which role(s) are you applying for?</legend>
+            <label class="form-check"><input type="checkbox" name="Roles" value="Debate Judge" data-pick="judge" /> <span>Debate Judge <small>Judge rounds and give feedback</small></span></label>
+            <label class="form-check"><input type="checkbox" name="Roles" value="Workshop Mentor" data-pick="mentor" /> <span>Workshop Mentor <small>Help lead 30-minute skills workshops</small></span></label>
+            <label class="form-check"><input type="checkbox" name="Roles" value="Guest Speaker" data-pick="speaker" /> <span>Guest Speaker <small>Share your experience with students</small></span></label>
+          </fieldset>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="vol-name">Full name</label>
+              <input class="form-input" type="text" id="vol-name" name="Name" required autocomplete="name" placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="vol-email">Email address</label>
+              <input class="form-input" type="email" id="vol-email" name="Email" required autocomplete="email" placeholder="you@example.com" />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="vol-age">Age</label>
+              <select class="form-select" id="vol-age" name="Age" required>
+                <option value="" disabled selected>Select</option>
+                <option>Under 16</option>
+                <option>16&ndash;17</option>
+                <option>18 or over</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="vol-location">Where are you based?</label>
+              <input class="form-input" type="text" id="vol-location" name="Location" required autocomplete="address-level2" placeholder="e.g. Oxford, UK" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="vol-current">Current role or studies <span class="form-optional">optional</span></label>
+            <input class="form-input" type="text" id="vol-current" name="Current role" placeholder="e.g. University student, teacher, barrister" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="vol-experience">Relevant experience</label>
+            <textarea class="form-textarea" id="vol-experience" name="Experience" required placeholder="Debating, judging, coaching, teaching or public speaking experience &mdash; anything relevant."></textarea>
+          </div>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-label">When could you help? <span class="form-optional">optional</span></legend>
+            <label class="form-check"><input type="checkbox" name="Availability" value="Online Sunday workshops (9:00 AM UK time)" /> <span>Online Sunday workshops <small>9:00 AM UK time</small></span></label>
+            <label class="form-check"><input type="checkbox" name="Availability" value="In-person Oxford Wednesdays (from 2027)" /> <span>In-person Oxford, Wednesdays <small>From 2027</small></span></label>
+            <label class="form-check"><input type="checkbox" name="Availability" value="Occasional events and tournaments" /> <span>Occasional events and tournaments</span></label>
+          </fieldset>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="vol-link">LinkedIn or CV link <span class="form-optional">optional</span></label>
+              <input class="form-input" type="url" id="vol-link" name="LinkedIn or CV" placeholder="https://" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="vol-found">How did you hear about POI? <span class="form-optional">optional</span></label>
+              <input class="form-input" type="text" id="vol-found" name="How found" placeholder="e.g. LinkedIn, a friend" />
+            </div>
+          </div>
+
+          <label class="form-check form-check--consent"><input type="checkbox" name="Safer recruitment" value="Understood" required /> <span>I understand that, before working with students, POI will ask for references and a background check (an Enhanced DBS check in the UK, or the local equivalent).</span></label>
+          <label class="form-check form-check--consent"><input type="checkbox" name="Privacy consent" value="Yes" required /> <span>I agree to POI using these details to process my application, as set out in our <a href="policies.html#operations" class="inline-link">privacy and data policies</a>.</span></label>
+
+          <p class="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-primary btn-block">Send Application <span class="arrow">&rarr;</span></button>
+        </form>
+
+        <div class="form-success" tabindex="-1" hidden>
+          <div class="form-success-icon">{{ICON:check}}</div>
+          <h3>Application sent!</h3>
+          <p>Thank you for offering your time &mdash; we&rsquo;ll be in touch by email about next steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
