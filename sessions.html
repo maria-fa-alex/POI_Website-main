@@ -27,7 +27,7 @@
   <meta name="geo.placename" content="Oxford" />
   <meta name="theme-color" content="#0A0F2E" />
   <script>document.documentElement.classList.add('js');(function(){try{var t=localStorage.getItem('poi-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
-  <link rel="stylesheet" href="assets/css/styles.css?v=3.1" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=3.2" />
   <link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
   <link rel="canonical" href="https://poi.org.uk/sessions.html" />
@@ -134,7 +134,7 @@
       <div class="nav-actions">
         <button type="button" class="theme-toggle-btn" aria-label="Toggle colour theme"></button>
         <a href="support.html" class="btn btn-outline-yellow">Support Us</a>
-        <a href="sessions.html#sign-up" class="btn btn-primary">Sign Up</a>
+        <a href="sessions.html" class="btn btn-primary">Sign Up</a>
       </div>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
@@ -153,7 +153,7 @@
         <a href="contact.html">Contact</a>
     <div class="mobile-nav-actions">
       <a href="support.html" class="btn btn-outline-yellow">Support Us</a>
-      <a href="sessions.html#sign-up" class="btn btn-primary">Sign Up &rarr;</a>
+      <a href="sessions.html" class="btn btn-primary">Sign Up &rarr;</a>
     </div>
   </nav>
 </header>
@@ -204,7 +204,7 @@
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Recordings sent to all sign-ups</li>
           </ul>
           <div class="cal-row"><span class="cal-label">Add to calendar</span><a class="cal-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=POI%20Online%20Debate%20Workshop&amp;dates=20261122T090000/20261122T093000&amp;ctz=Europe/London&amp;recur=RRULE:FREQ%3DWEEKLY%3BBYDAY%3DSU&amp;details=Free%2030-minute%20online%20debate%20workshop%20from%20POI%20%E2%80%93%20Power%20of%20Interest.%20Occasional%20weeks%20may%20be%20skipped%20%E2%80%93%20see%20poi.org.uk%20for%20updates.&amp;location=Google%20Meet%20(online)" target="_blank" rel="noopener noreferrer">Google</a><a class="cal-btn" href="assets/calendar/poi-sunday-workshop.ics">Apple / Outlook</a></div>
-          <a href="#sign-up" class="btn btn-primary" data-pick-for="signup-form" data-pick="online">Sign Up Free <span class="arrow">&rarr;</span></a>
+          <a href="https://forms.gle/5QHe85JXhqRzZDdo7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign Up via Google Form <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="card level-card reveal reveal-delay-2">
@@ -221,7 +221,7 @@
             <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Hosted in Summertown, Oxford</li>
             <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Up to 24 students per cohort</li>
           </ul>
-          <a href="#sign-up" class="btn btn-primary" data-pick-for="signup-form" data-pick="oxford">Join the 2027 Waitlist <span class="arrow">&rarr;</span></a>
+          <a href="https://forms.gle/5QHe85JXhqRzZDdo7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Register Interest <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="card level-card reveal reveal-delay-3">
@@ -242,114 +242,6 @@
       </div>
     </div>
   </section>
-
-  <!-- ===== SIGN UP ===== -->
-  <section class="section section--alt" id="sign-up">
-    <div class="container signup-grid">
-      <div class="signup-intro reveal">
-        <span class="eyebrow">Sign Up</span>
-        <h2>Save your <span class="mark">seat</span></h2>
-        <p class="lede">It&rsquo;s free and takes about a minute. We&rsquo;ll be in touch by email with everything you need to join.</p>
-        <ul class="check-list">
-          <li><span>Online workshops every Sunday, 9:00 AM UK time<span class="local-time local-time--block" data-uk-start="09:00" data-uk-end="09:30" data-weekday="0" hidden></span></span></li>
-          <li>Join from anywhere in the world &mdash; no experience needed</li>
-          <li>In-person Oxford sessions start in 2027 &mdash; join the waitlist</li>
-          <li>Under 13? We&rsquo;ll also need a parent or guardian&rsquo;s details</li>
-        </ul>
-      </div>
-
-      <div class="card form-card reveal reveal-delay-2" data-form-wrap>
-        <form id="signup-form" action="https://formspree.io/f/xykbrlbj" method="POST" data-ajax>
-          <input type="hidden" name="_subject" value="New Session Sign-Up" />
-          <input type="hidden" name="Time zone" id="signup-tz" value="" />
-          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-          <fieldset class="form-fieldset" data-require-one="Please choose at least one session.">
-            <legend class="form-label">Which sessions would you like?</legend>
-            <label class="form-check"><input type="checkbox" name="Sessions" value="Online Sunday workshops" data-pick="online" /> <span>Online Sunday workshops <small>9:00 AM UK time</small></span></label>
-            <label class="form-check"><input type="checkbox" name="Sessions" value="In-person Oxford (2027 waitlist)" data-pick="oxford" /> <span>In-person Oxford sessions <small>2027 waitlist</small></span></label>
-          </fieldset>
-
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label" for="signup-name">Student&rsquo;s full name</label>
-              <input class="form-input" type="text" id="signup-name" name="Student name" required autocomplete="name" placeholder="Full name" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="signup-email">Email address</label>
-              <input class="form-input" type="email" id="signup-email" name="Email" required autocomplete="email" placeholder="you@example.com" />
-            </div>
-          </div>
-
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label" for="signup-age">Student&rsquo;s age</label>
-              <select class="form-select" id="signup-age" name="Age" required>
-                <option value="" disabled selected>Select age</option>
-                <option>Under 11</option><option>11</option><option>12</option><option>13</option><option>14</option>
-                <option>15</option><option>16</option><option>17</option><option>18</option><option>19 or over</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="signup-country">Country</label>
-              <input class="form-input" type="text" id="signup-country" name="Country" required autocomplete="country-name" placeholder="e.g. United Kingdom" />
-            </div>
-          </div>
-
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label" for="signup-year">School year / grade <span class="form-optional">optional</span></label>
-              <input class="form-input" type="text" id="signup-year" name="School year" placeholder="e.g. Year 9 or Grade 8" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="signup-exp">Debate experience <span class="form-optional">optional</span></label>
-              <select class="form-select" id="signup-exp" name="Experience">
-                <option value="" selected>Choose one</option>
-                <option>None &ndash; complete beginner</option>
-                <option>A little</option>
-                <option>Some competitive debating</option>
-              </select>
-            </div>
-          </div>
-
-          <fieldset class="form-fieldset form-fieldset--box" id="guardian-fields">
-            <legend class="form-label">Parent or guardian <span class="form-optional" id="guardian-status">optional</span></legend>
-            <p class="form-hint" id="guardian-hint" hidden>Because the student is under 13, we need a parent or guardian&rsquo;s details and permission.</p>
-            <div class="form-grid">
-              <div class="form-group">
-                <label class="form-label" for="signup-parent-name">Name</label>
-                <input class="form-input" type="text" id="signup-parent-name" name="Parent name" autocomplete="off" placeholder="Parent or guardian's name" />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="signup-parent-email">Email</label>
-                <input class="form-input" type="email" id="signup-parent-email" name="Parent email" autocomplete="off" placeholder="parent@example.com" />
-              </div>
-            </div>
-            <label class="form-check" id="guardian-consent" hidden><input type="checkbox" name="Parent permission" value="Yes" /> <span>I am the parent or guardian, or my parent or guardian has agreed to me signing up.</span></label>
-          </fieldset>
-
-          <div class="form-group">
-            <label class="form-label" for="signup-found">How did you hear about POI? <span class="form-optional">optional</span></label>
-            <input class="form-input" type="text" id="signup-found" name="How found" placeholder="e.g. Instagram, a friend, my school..." />
-          </div>
-
-          <label class="form-check form-check--consent"><input type="checkbox" name="Privacy consent" value="Yes" required /> <span>I agree to POI using these details to organise sessions and contact me about them, as set out in our <a href="policies.html#operations" class="inline-link">privacy and data policies</a>.</span></label>
-
-          <p class="form-tz" hidden>Your time zone: <strong data-tz-out></strong></p>
-          <p class="form-error" role="alert" hidden></p>
-          <button type="submit" class="btn btn-primary btn-block">Sign Up Free <span class="arrow">&rarr;</span></button>
-        </form>
-
-        <div class="form-success" tabindex="-1" hidden>
-          <div class="form-success-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <h3>You&rsquo;re signed up!</h3>
-          <p>Thanks &mdash; we&rsquo;ll be in touch by email with everything you need to join. Add the Sunday workshops to your calendar so you don&rsquo;t miss one:</p>
-          <div class="cal-row"><span class="cal-label">Add to calendar</span><a class="cal-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=POI%20Online%20Debate%20Workshop&amp;dates=20261122T090000/20261122T093000&amp;ctz=Europe/London&amp;recur=RRULE:FREQ%3DWEEKLY%3BBYDAY%3DSU&amp;details=Free%2030-minute%20online%20debate%20workshop%20from%20POI%20%E2%80%93%20Power%20of%20Interest.%20Occasional%20weeks%20may%20be%20skipped%20%E2%80%93%20see%20poi.org.uk%20for%20updates.&amp;location=Google%20Meet%20(online)" target="_blank" rel="noopener noreferrer">Google</a><a class="cal-btn" href="assets/calendar/poi-sunday-workshop.ics">Apple / Outlook</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
   <!-- ===== HOW IT FITS ===== -->
   <section class="section">
@@ -410,7 +302,7 @@
           <p>Get in touch with our team or register for our next session &mdash; it&rsquo;s free, and no experience is needed.</p>
         </div>
         <div class="cta-band-actions">
-          <a href="sessions.html#sign-up" class="btn btn-dark">Join a Session <span class="arrow">&rarr;</span></a>
+          <a href="sessions.html" class="btn btn-dark">Join a Session <span class="arrow">&rarr;</span></a>
           <a href="contact.html" class="btn btn-outline">Get In Touch</a>
         </div>
       </div>
@@ -420,24 +312,6 @@
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-newsletter" data-form-wrap>
-      <div class="footer-newsletter-copy">
-        <h4>Stay in the loop</h4>
-        <p>Session breaks, new resources, and news about the 2027 Oxford sessions &mdash; straight to your inbox.</p>
-      </div>
-      <form class="newsletter-form" action="https://formspree.io/f/xykbrlbj" method="POST" data-ajax>
-        <input type="hidden" name="_subject" value="Mailing List Sign-Up" />
-        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <div class="newsletter-row">
-          <label class="sr-only" for="newsletter-email">Email address</label>
-          <input class="form-input" type="email" id="newsletter-email" name="Email" required autocomplete="email" placeholder="Your email address" />
-          <button type="submit" class="btn btn-primary">Subscribe</button>
-        </div>
-        <label class="form-check form-check--dark"><input type="checkbox" name="Consent" value="Yes" required /> <span>I&rsquo;m 13 or over (or a parent or guardian) and happy to get emails from POI. You can unsubscribe at any time.</span></label>
-        <p class="form-error" role="alert" hidden></p>
-      </form>
-      <div class="form-success" tabindex="-1" hidden><strong>You&rsquo;re subscribed!</strong> Thanks &mdash; look out for our next update.</div>
-    </div>
     <div class="footer-grid">
       <div>
         <div class="footer-brand-row">
@@ -461,7 +335,7 @@
       <div class="footer-col">
         <h4>Get Involved</h4>
         <ul>
-          <li><a href="sessions.html#sign-up">Sign Up</a></li>
+          <li><a href="sessions.html">Sign Up</a></li>
           <li><a href="volunteering.html">Volunteer</a></li>
           <li><a href="support.html">Support Us</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -483,6 +357,6 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/main.js?v=3.1"></script>
+<script src="assets/js/main.js?v=3.2"></script>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <meta name="geo.placename" content="Oxford" />
   <meta name="theme-color" content="#0A0F2E" />
   <script>document.documentElement.classList.add('js');(function(){try{var t=localStorage.getItem('poi-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
-  <link rel="stylesheet" href="assets/css/styles.css?v=3.1" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=3.2" />
   <link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
   <link rel="canonical" href="https://poi.org.uk/volunteering.html" />
@@ -68,7 +68,7 @@
       <div class="nav-actions">
         <button type="button" class="theme-toggle-btn" aria-label="Toggle colour theme"></button>
         <a href="support.html" class="btn btn-outline-yellow">Support Us</a>
-        <a href="sessions.html#sign-up" class="btn btn-primary">Sign Up</a>
+        <a href="sessions.html" class="btn btn-primary">Sign Up</a>
       </div>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
@@ -87,7 +87,7 @@
         <a href="contact.html">Contact</a>
     <div class="mobile-nav-actions">
       <a href="support.html" class="btn btn-outline-yellow">Support Us</a>
-      <a href="sessions.html#sign-up" class="btn btn-primary">Sign Up &rarr;</a>
+      <a href="sessions.html" class="btn btn-primary">Sign Up &rarr;</a>
     </div>
   </nav>
 </header>
@@ -129,7 +129,7 @@
           <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14.5 12.5-8 8a2.12 2.12 0 1 1-3-3l8-8"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/></svg></div>
           <h3>Debate Judge</h3>
           <p>Evaluate parliamentary debates, offer constructive feedback, and guide aspiring debaters. Previous BP or competitive debate experience preferred.</p>
-          <a href="#apply" class="btn btn-primary" data-pick-for="volunteer-form" data-pick="judge">Apply as Judge <span class="arrow">&rarr;</span></a>
+          <a href="https://forms.gle/8f2bfJ6y3n93ESmb6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Apply as Judge <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="card role-card reveal reveal-delay-2">
@@ -140,7 +140,7 @@
           <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
           <h3>Workshop Mentor</h3>
           <p>Lead 30-minute skills workshops, facilitate practice exercises, and teach critical thinking, argumentation, and rebuttal techniques to secondary students.</p>
-          <a href="#apply" class="btn btn-primary" data-pick-for="volunteer-form" data-pick="mentor">Apply as Mentor <span class="arrow">&rarr;</span></a>
+          <a href="https://forms.gle/8f2bfJ6y3n93ESmb6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Apply as Mentor <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="card role-card reveal reveal-delay-3">
@@ -151,7 +151,7 @@
           <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg></div>
           <h3>Guest Speaker</h3>
           <p>Share your insights from law, philosophy, politics, academia, or industry. Inspire students on the power of effective communication in the real world.</p>
-          <a href="#apply" class="btn btn-primary" data-pick-for="volunteer-form" data-pick="speaker">Apply as Guest Speaker <span class="arrow">&rarr;</span></a>
+          <a href="https://forms.gle/8f2bfJ6y3n93ESmb6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Apply as Guest Speaker <span class="arrow">&rarr;</span></a>
         </article>
       </div>
 
@@ -202,105 +202,6 @@
     </div>
   </section>
 
-  <!-- ===== APPLY ===== -->
-  <section class="section" id="apply">
-    <div class="container signup-grid">
-      <div class="signup-intro reveal">
-        <span class="eyebrow">Apply</span>
-        <h2>Volunteer <span class="mark">application</span></h2>
-        <p class="lede">Tell us a little about yourself and the role you&rsquo;re interested in. We&rsquo;ll get back to you by email about next steps.</p>
-        <ul class="check-list">
-          <li>Online roles can be done from anywhere in the world</li>
-          <li>We follow safer recruitment: references and a background check (an Enhanced DBS check in the UK) before working with students</li>
-          <li><span>You&rsquo;ll be supported by our <a href="policies.html#people" class="inline-link">volunteer and conduct policies</a></span></li>
-        </ul>
-      </div>
-
-      <div class="card form-card reveal reveal-delay-2" data-form-wrap>
-        <form id="volunteer-form" action="https://formspree.io/f/xykbrlbj" method="POST" data-ajax>
-          <input type="hidden" name="_subject" value="New Volunteer Application" />
-          <input type="hidden" name="Time zone" data-tz-field value="" />
-          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-          <fieldset class="form-fieldset" data-require-one="Please choose at least one role.">
-            <legend class="form-label">Which role(s) are you applying for?</legend>
-            <label class="form-check"><input type="checkbox" name="Roles" value="Debate Judge" data-pick="judge" /> <span>Debate Judge <small>Judge rounds and give feedback</small></span></label>
-            <label class="form-check"><input type="checkbox" name="Roles" value="Workshop Mentor" data-pick="mentor" /> <span>Workshop Mentor <small>Help lead 30-minute skills workshops</small></span></label>
-            <label class="form-check"><input type="checkbox" name="Roles" value="Guest Speaker" data-pick="speaker" /> <span>Guest Speaker <small>Share your experience with students</small></span></label>
-          </fieldset>
-
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label" for="vol-name">Full name</label>
-              <input class="form-input" type="text" id="vol-name" name="Name" required autocomplete="name" placeholder="Your full name" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="vol-email">Email address</label>
-              <input class="form-input" type="email" id="vol-email" name="Email" required autocomplete="email" placeholder="you@example.com" />
-            </div>
-          </div>
-
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label" for="vol-age">Age</label>
-              <select class="form-select" id="vol-age" name="Age" required>
-                <option value="" disabled selected>Select</option>
-                <option>Under 16</option>
-                <option>16&ndash;17</option>
-                <option>18 or over</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="vol-location">Where are you based?</label>
-              <input class="form-input" type="text" id="vol-location" name="Location" required autocomplete="address-level2" placeholder="e.g. Oxford, UK" />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="vol-current">Current role or studies <span class="form-optional">optional</span></label>
-            <input class="form-input" type="text" id="vol-current" name="Current role" placeholder="e.g. University student, teacher, barrister" />
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="vol-experience">Relevant experience</label>
-            <textarea class="form-textarea" id="vol-experience" name="Experience" required placeholder="Debating, judging, coaching, teaching or public speaking experience &mdash; anything relevant."></textarea>
-          </div>
-
-          <fieldset class="form-fieldset">
-            <legend class="form-label">When could you help? <span class="form-optional">optional</span></legend>
-            <label class="form-check"><input type="checkbox" name="Availability" value="Online Sunday workshops (9:00 AM UK time)" /> <span>Online Sunday workshops <small>9:00 AM UK time</small></span></label>
-            <label class="form-check"><input type="checkbox" name="Availability" value="In-person Oxford Wednesdays (from 2027)" /> <span>In-person Oxford, Wednesdays <small>From 2027</small></span></label>
-            <label class="form-check"><input type="checkbox" name="Availability" value="Occasional events and tournaments" /> <span>Occasional events and tournaments</span></label>
-          </fieldset>
-
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label" for="vol-link">LinkedIn or CV link <span class="form-optional">optional</span></label>
-              <input class="form-input" type="url" id="vol-link" name="LinkedIn or CV" placeholder="https://" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="vol-found">How did you hear about POI? <span class="form-optional">optional</span></label>
-              <input class="form-input" type="text" id="vol-found" name="How found" placeholder="e.g. LinkedIn, a friend" />
-            </div>
-          </div>
-
-          <label class="form-check form-check--consent"><input type="checkbox" name="Safer recruitment" value="Understood" required /> <span>I understand that, before working with students, POI will ask for references and a background check (an Enhanced DBS check in the UK, or the local equivalent).</span></label>
-          <label class="form-check form-check--consent"><input type="checkbox" name="Privacy consent" value="Yes" required /> <span>I agree to POI using these details to process my application, as set out in our <a href="policies.html#operations" class="inline-link">privacy and data policies</a>.</span></label>
-
-          <p class="form-error" role="alert" hidden></p>
-          <button type="submit" class="btn btn-primary btn-block">Send Application <span class="arrow">&rarr;</span></button>
-        </form>
-
-        <div class="form-success" tabindex="-1" hidden>
-          <div class="form-success-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <h3>Application sent!</h3>
-          <p>Thank you for offering your time &mdash; we&rsquo;ll be in touch by email about next steps.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
   <section class="section section--tight">
     <div class="container">
       <div class="cta-band reveal">
@@ -309,7 +210,7 @@
           <p>Get in touch with our team or register for our next session &mdash; it&rsquo;s free, and no experience is needed.</p>
         </div>
         <div class="cta-band-actions">
-          <a href="sessions.html#sign-up" class="btn btn-dark">Join a Session <span class="arrow">&rarr;</span></a>
+          <a href="sessions.html" class="btn btn-dark">Join a Session <span class="arrow">&rarr;</span></a>
           <a href="contact.html" class="btn btn-outline">Get In Touch</a>
         </div>
       </div>
@@ -319,24 +220,6 @@
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-newsletter" data-form-wrap>
-      <div class="footer-newsletter-copy">
-        <h4>Stay in the loop</h4>
-        <p>Session breaks, new resources, and news about the 2027 Oxford sessions &mdash; straight to your inbox.</p>
-      </div>
-      <form class="newsletter-form" action="https://formspree.io/f/xykbrlbj" method="POST" data-ajax>
-        <input type="hidden" name="_subject" value="Mailing List Sign-Up" />
-        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <div class="newsletter-row">
-          <label class="sr-only" for="newsletter-email">Email address</label>
-          <input class="form-input" type="email" id="newsletter-email" name="Email" required autocomplete="email" placeholder="Your email address" />
-          <button type="submit" class="btn btn-primary">Subscribe</button>
-        </div>
-        <label class="form-check form-check--dark"><input type="checkbox" name="Consent" value="Yes" required /> <span>I&rsquo;m 13 or over (or a parent or guardian) and happy to get emails from POI. You can unsubscribe at any time.</span></label>
-        <p class="form-error" role="alert" hidden></p>
-      </form>
-      <div class="form-success" tabindex="-1" hidden><strong>You&rsquo;re subscribed!</strong> Thanks &mdash; look out for our next update.</div>
-    </div>
     <div class="footer-grid">
       <div>
         <div class="footer-brand-row">
@@ -360,7 +243,7 @@
       <div class="footer-col">
         <h4>Get Involved</h4>
         <ul>
-          <li><a href="sessions.html#sign-up">Sign Up</a></li>
+          <li><a href="sessions.html">Sign Up</a></li>
           <li><a href="volunteering.html">Volunteer</a></li>
           <li><a href="support.html">Support Us</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -382,6 +265,6 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/main.js?v=3.1"></script>
+<script src="assets/js/main.js?v=3.2"></script>
 </body>
 </html>
