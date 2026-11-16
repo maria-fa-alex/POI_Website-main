@@ -489,7 +489,8 @@ def build(page, extra=None):
     out = head + "\n" + body.rstrip() + "\n</body>\n</html>\n"
     if page == "404":  # served from any URL depth, so links must be root-relative
         out = re.sub(r'(href|src)="(?!https?:|mailto:|#|/)([^"]+)"', r'\1="/\2"', out)
-    (SITE / f"{page}.html").write_text(out, encoding="utf-8", newline="\n")
+    with (SITE / f"{page}.html").open("w", encoding="utf-8", newline="\n") as f:
+        f.write(out)
     print("built", page, len(out))
 
 
@@ -513,7 +514,6 @@ def page404_head():
 MOTION_BANK = [
     # (motion, topics, session label, date note, walkthrough guide in Session Resources?)
     ("This House Would stop granting awards to media that use AI", ["Culture &amp; Media", "Technology"], "Session 07", "15 Nov 2026", True),
-    ("This House supports vandalising cultural artifacts as a form of environmental protest", ["Environment", "Culture &amp; Media"], "Session 07", "Example from the Weighing slides", False),
     ("This House Would abolish the death penalty", ["Justice"], "Session 06", "8 Nov 2026", True),
     ("This House Would abolish prison as a punishment for non-violent crimes", ["Justice"], "Session 05", "18 Oct 2026", True),
     ("This House Believes that phones should be banned in schools", ["Education", "Technology"], "Session 04", "11 Oct 2026", True),

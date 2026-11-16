@@ -67,9 +67,9 @@ SESSIONS = [
     dict(
         num=7,
         date="Sunday 15th November 2026",
-        title="Weighing",
-        description=("How to explain why your team has won &mdash; what weighing is, the key metrics for comparing arguments (scale, irreversibility, morality, time frame, magnitude, prerequisite, probability, scope, and precedent), and how to weigh point by point in your speech, using the example motion <em>&ldquo;This House supports vandalising cultural artifacts as a form of environmental protest&rdquo;</em> &mdash; includes full motion walkthrough guide for <em>&ldquo;This House Would stop granting awards to media that use AI&rdquo;</em>."),
-        slides="Weighing_Session_7.pdf",
+        title="Whipping",
+        description=("Roles and strategies for the final two speakers in the Closing Half &mdash; Government Whip (GW) and Opposition Whip (OW). Covers whip responsibilities (no new points, refuting opposing arguments without undermining your Opening team, rebuilding extensions, and weighing), structuring speeches around Points of Clash, and a worked Proposition whip example &mdash; includes full motion walkthrough guide for <em>&ldquo;This House Would stop granting awards to media that use AI&rdquo;</em>."),
+        slides="Whipping_Session_7.pdf",
         guide="Session_7_Motion_Work_Through_Awards_for_AI_Media.pdf",
         guide_name="Awards for AI Media",
     ),
