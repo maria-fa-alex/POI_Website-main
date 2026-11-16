@@ -20,8 +20,9 @@ SITE = BUILD.parent
 sys.path.insert(0, str(BUILD))
 
 DONATE = "https://www.zeffy.com/en-GB/donation-form/your-words-your-way"
-FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfbnTofT5rCoszg3Ss6L62FXiu2O5CAVo17pNzqVoErUJhwug/viewform?usp=header"
-VOL_FORM = "https://forms.gle/StdUCLbzCbaD52zS6"
+FORM = "https://forms.gle/5QHe85JXhqRzZDdo7"          # student sign-up (Google Form)
+VOL_FORM = "https://forms.gle/8f2bfJ6y3n93ESmb6"      # volunteer role applications (Google Form)
+CONTACT_FORM = ""   # contact Google Form link, e.g. "https://forms.gle/..." (empty = the button emails contact@poi.org.uk)
 IMG = "assets/images/"
 
 def svg(inner, size=20):
@@ -86,7 +87,7 @@ def header(active):
       <div class="nav-actions">
         <button type="button" class="theme-toggle-btn" aria-label="Toggle colour theme"></button>
         <a href="support.html" class="btn btn-outline-yellow">Support Us</a>
-        <a href="sessions.html#sign-up" class="btn btn-primary">Sign Up</a>
+        <a href="sessions.html" class="btn btn-primary">Sign Up</a>
       </div>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
@@ -97,35 +98,23 @@ def header(active):
     {links(MOBILE_NAV)}
     <div class="mobile-nav-actions">
       <a href="support.html" class="btn btn-outline-yellow">Support Us</a>
-      <a href="sessions.html#sign-up" class="btn btn-primary">Sign Up &rarr;</a>
+      <a href="sessions.html" class="btn btn-primary">Sign Up &rarr;</a>
     </div>
   </nav>
 </header>'''
 
 
-FORMSPREE = "https://formspree.io/f/xykbrlbj"
-HONEYPOT = '<input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />'
+
+
+def contact_button():
+    if CONTACT_FORM:
+        return (f'<a href="{CONTACT_FORM}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">'
+                'Open the Contact Form <span class="arrow">&rarr;</span></a>')
+    return ('<a href="mailto:contact@poi.org.uk" class="btn btn-primary btn-block">'
+            'Email contact@poi.org.uk <span class="arrow">&rarr;</span></a>')
 
 FOOTER = f'''<footer class="site-footer">
   <div class="container">
-    <div class="footer-newsletter" data-form-wrap>
-      <div class="footer-newsletter-copy">
-        <h4>Stay in the loop</h4>
-        <p>Session breaks, new resources, and news about the 2027 Oxford sessions &mdash; straight to your inbox.</p>
-      </div>
-      <form class="newsletter-form" action="{FORMSPREE}" method="POST" data-ajax>
-        <input type="hidden" name="_subject" value="Mailing List Sign-Up" />
-        {HONEYPOT}
-        <div class="newsletter-row">
-          <label class="sr-only" for="newsletter-email">Email address</label>
-          <input class="form-input" type="email" id="newsletter-email" name="Email" required autocomplete="email" placeholder="Your email address" />
-          <button type="submit" class="btn btn-primary">Subscribe</button>
-        </div>
-        <label class="form-check form-check--dark"><input type="checkbox" name="Consent" value="Yes" required /> <span>I&rsquo;m 13 or over (or a parent or guardian) and happy to get emails from POI. You can unsubscribe at any time.</span></label>
-        <p class="form-error" role="alert" hidden></p>
-      </form>
-      <div class="form-success" tabindex="-1" hidden><strong>You&rsquo;re subscribed!</strong> Thanks &mdash; look out for our next update.</div>
-    </div>
     <div class="footer-grid">
       <div>
         <div class="footer-brand-row">
@@ -149,7 +138,7 @@ FOOTER = f'''<footer class="site-footer">
       <div class="footer-col">
         <h4>Get Involved</h4>
         <ul>
-          <li><a href="sessions.html#sign-up">Sign Up</a></li>
+          <li><a href="sessions.html">Sign Up</a></li>
           <li><a href="volunteering.html">Volunteer</a></li>
           <li><a href="support.html">Support Us</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -180,7 +169,7 @@ CTA = '''<section class="section section--tight">
           <p>Get in touch with our team or register for our next session &mdash; it&rsquo;s free, and no experience is needed.</p>
         </div>
         <div class="cta-band-actions">
-          <a href="sessions.html#sign-up" class="btn btn-dark">Join a Session <span class="arrow">&rarr;</span></a>
+          <a href="sessions.html" class="btn btn-dark">Join a Session <span class="arrow">&rarr;</span></a>
           <a href="contact.html" class="btn btn-outline">Get In Touch</a>
         </div>
       </div>
@@ -202,7 +191,7 @@ def ticker():
     one = "".join(f'<span class="ticker-item"><b>Motion</b>{m}</span>' for m in MOTIONS)
     return f'<div class="ticker-group">{one}</div><div class="ticker-group" aria-hidden="true">{one}</div>'
 
-VER = "3.1"
+VER = "3.2"
 ICON_LINKS = ('<link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32" />\n'
               '  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />')
 
@@ -247,6 +236,7 @@ HEAD_FIXES = {
     ],
     "contact": [
         ("Based in Oxford, serving students across the UK.", "Based in Oxford, serving students worldwide."),
+        ("Email contact@poi.org.uk or use our contact form.", "Email us at contact@poi.org.uk."),
     ],
 }
 
@@ -481,11 +471,9 @@ def resources_parts():
 
 def build(page, extra=None):
     body = (TEMPLATES / f"{page}.body.html").read_text(encoding="utf-8")
-    subs = {"SIGNUP": (TEMPLATES / "signup.partial.html").read_text(encoding="utf-8"),
-            "VOLUNTEER_APPLY": (TEMPLATES / "volunteer-apply.partial.html").read_text(encoding="utf-8"),
-            "HEADER:" + page: header(page), "FOOTER": FOOTER, "CTA": CTA, "TICKER": ticker(),
+    subs = {"HEADER:" + page: header(page), "FOOTER": FOOTER, "CTA": CTA, "TICKER": ticker(),
             "SOCIALS": SOCIALS, "DONATE": DONATE, "DONATE_PLAIN": DONATE, "FORM": FORM, "VOL_FORM": VOL_FORM,
-            "FORMSPREE": FORMSPREE, "HONEYPOT": HONEYPOT, "CAL_ROW": CAL_ROW}
+            "CONTACT_BUTTON": contact_button(), "CAL_ROW": CAL_ROW}
     subs.update(extra or {})
     for k, v in subs.items():
         body = body.replace("{{" + k + "}}", v)

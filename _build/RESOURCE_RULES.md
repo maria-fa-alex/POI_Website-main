@@ -36,4 +36,5 @@ If it isn't clear whether a new file is official slides (protected) or informal 
 (unrestricted), **check with the POI team before publishing it.**
 
 > Note: these protections discourage casual copying only. Anyone who knows a PDF's web
-> address can still open it. See the main README's to-do list for proper protection options.
+> address can still open it. For truly members-only files, host them behind real logins
+> (e.g. a shared Google Drive folder or Cloudflare Access).
